@@ -6,13 +6,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #FAF8F5;
+}
+
 .navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 6rem;
-    border-bottom: .1rem solid #A7A5A5;
+    /* border-bottom: .1rem solid #A7A5A5; */
+    margin-bottom: 1rem;
 }
 
 .categorias {
@@ -79,4 +84,173 @@
     border-radius: .8rem;
     border: .1rem solid #A7A5A5;
     width: 20rem;
+}
+
+.banner-anuncios {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-anuncios img {
+    width: 80%;
+}
+
+.banner-anuncios i {
+    font-size: 3rem;
+    z-index: 1;
+    color: #e2e1e1;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.banner-anuncios #seta-esquerda {
+    margin-right: -3rem;
+}
+
+.banner-anuncios #seta-direita {
+    margin-left: -3rem;
+}
+
+.banner-anuncios i:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.botao-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.botao {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.lista-produtos {
+    padding: 6rem;
+}
+
+.emphasis {
+    width: 175px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FED6B9;
+    border: 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.04px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.emphasis .emphasis-icon {
+    padding-right: 7px;
+    width: 11%;
+}
+
+.emphasis:hover {
+    transform: translate(1px, 0px);
+    background: #f8c29c;
+}
+
+.card-wrapper {
+    width: 242px;
+    height: 355px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-wrapper .img-product {
+    margin-top: 10px;
+    width: 170px;
+    height: 119.282px;
+    flex-shrink: 0;
+}
+
+.card-wrapper .name-product {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-wrapper .value-product {
+    display: flex;
+    justify-content: center;
+}
+
+.card-wrapper .value-product h2 {
+    padding-left: 2px;
+    font-size: 52px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+.card-wrapper .value-product h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 7px;
+}
+
+.card-wrapper .value-product h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 36px;
+}
+
+.card-wrapper button {
+    width: 195px;
+    height: 39px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 15px;
+    background: rgba(184, 20, 20, 0.85);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card-wrapper i {
+    flex-shrink: 0;
+    padding-left: 4px;
+    fill: #FFF;
+    stroke-width: 0.4px;
+    stroke: #FFF;
+}
+
+.card-wrapper button:hover{
+    transform: translate(0px, 1px);
+    background: rgb(160, 3, 3);
+}
+
+.card-wrapper .seller {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
 }

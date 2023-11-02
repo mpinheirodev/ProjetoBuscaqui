@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./src/ant-design_fire-filled.png"
+      href="./src/assets/ant-design_fire-filled.png"
       type="image/x-icon"
     />
     <script
@@ -22,21 +22,26 @@
     <title>Buscaqui 🔥</title>
   </head>
   <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
     <nav class="navbar">
       <!-- logo -->
       <div class="logo_nav">
         <img src="./src/assets/BUSCAQUI_LOGO.png" alt="Logo" class="img_logo" />
       </div>
+
+      <!-- categorias -->
       <div class="categorias">
         <h3>Categorias</h3>
         <i class="fa-solid fa-chevron-down"></i>
       </div>
 
+      <!-- Área de busca -->
       <div class="busca">
         <input type="text" placeholder="Busque por produtos" />
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
 
+      <!-- grupo de links -->
       <div class="links">
         <div class="cupons">
           <i class="fa-solid fa-percent"></i>
@@ -51,10 +56,46 @@
           <h4>Fórum</h4>
         </div>
       </div>
+
+      <!-- grupo de usuário -->
       <div class="usuario">
         <i class="fa-regular fa-bell"></i>
         <i class="fa-regular fa-circle-user"></i>
       </div>
     </nav>
+
+    <!-- HEADER -->
+    <header>
+      <div class="banner-anuncios">
+        <i class="fa-solid fa-chevron-left" id="seta-esquerda"></i>
+        <img src="./src/assets/ANUNCIO.png" alt="" />
+        <div class="botao-carrossel">
+          <button class="botao selecionado"></button>
+          <button class="botao"></button>
+          <button class="botao"></button>
+        </div>
+        <i class="fa-solid fa-chevron-right" id="seta-direita"></i>
+      </div>
+    </header>
+
+    <!-- SESSÃO DE PRODUTOS -->
+    <section class="lista-produtos">
+      <button class="emphasis">
+        <img class="emphasis-icon" src="./src/assets/fogo.svg" />Destaques
+      </button>
+      <div class="card-wrapper">
+        <img class="img-product" src="./src/assets/img.png" />
+        <p class="name-product">
+          Notebook Lenovo Ideapad 3i I3-1115G4 4GB 256GB SSD W11 15.6" Prata
+        </p>
+        <div class="value-product">
+          <h3>R$</h3>
+          <h2>1861</h2>
+          <h4>,90</h4>
+        </div>
+        <button>Ver Promoção<i class="fa-solid fa-chevron-right"></i></button>
+        <p class="seller">Vendido por <strong>Americanas</strong></p>
+      </div>
+    </section>
   </body>
 </html>
