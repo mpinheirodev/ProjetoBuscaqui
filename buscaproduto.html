@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/ant-design_fire-filled.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/47576b6131.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/buscaproduto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buscaqui 🔥</title>
+    </head>
+    <body>
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo_nav">
+              <img src="./src/assets/BUSCAQUI_LOGO.png" alt="Logo" class="img_logo" />
+            </div>
+      
+            <!-- Categorias -->
+            <div class="categorias">
+              <h3>Categorias</h3>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+      
+            <!-- Área de busca -->
+            <div class="busca">
+              <input type="text" placeholder="Busque por produtos" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+      
+            <!-- Grupo de links -->
+            <div class="links">
+              <div class="cupons">
+                <i class="fa-solid fa-percent"></i>
+                <h4>Cupons</h4>
+              </div>
+              <div class="cashback">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h4>Cashback</h4>
+              </div>
+              <div class="forum">
+                <i class="fa-regular fa-comments"></i>
+                <h4>Fórum</h4>
+              </div>
+            </div>
+      
+            <!-- Grupo de usuário -->
+            <div class="usuario">
+              <i class="fa-regular fa-bell"></i>
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </nav>
+    
+        <!-- Histórico Navegação -->
+        <div class="historico_navegacao">
+            <h5>Home</h5>
+            <i class="fa-solid fa-chevron-right seta_navegacao"></i>
+            <h6 class="diretorio_atual">Celulares e Smartphones</h6>
+        </div>
+
+        <!-- Div Preço -->
+        <div class="fundo_preco">
+            <h4 class="titulo_preco">Preço</h4>
+                <div class="container_faixa">
+                    <div class="faixa_deslizante"></div>
+                    <input type="range" min="1000" max="12000" value="1000" id="slider-1" oninput="deslizarMin()">
+                    <input type="range" min="1000" max="12000" value="12000" id="slider-2" oninput="deslizarMax()">
+                </div>
+                <div class="container_preco_atual">
+                    <h6 class="preco_atual">R$ <span id="range1"></span>,00</h6>
+                    <h6 class="preco_atual2">R$ <span id="range2"></span>,00</h6>
+                </div>
+            </div>
+            <!--Script-->
+            <script src="src/buscaproduto.js"></script>
+    </body>
+</html>
