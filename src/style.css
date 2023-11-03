@@ -284,3 +284,25 @@ body {
   font-weight: 400;
   margin-top: 10px;
 }
+
+.historico_navegacao {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 480;
+  line-height: normal;
+  font-style: normal;
+  justify-content: left;
+  padding-left: 98px;
+}
+
+.seta_navegacao {
+
+  font-size: .7rem;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.diretorio_atual {
+  font-weight: 470;
+}
