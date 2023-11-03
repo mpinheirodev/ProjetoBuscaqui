@@ -66,15 +66,27 @@
 
     <!-- HEADER -->
     <header>
-      <div class="banner-anuncios">
-        <i class="fa-solid fa-chevron-left" id="seta-esquerda"></i>
-        <img src="./src/assets/ANUNCIO.png" alt="" />
-        <div class="botao-carrossel">
-          <button class="botao selecionado"></button>
-          <button class="botao"></button>
-          <button class="botao"></button>
+      <div class="carrossel-banner">
+        <div class="slide fade">
+          <img src="./src/assets/ANUNCIO.png" alt="">
         </div>
-        <i class="fa-solid fa-chevron-right" id="seta-direita"></i>
+
+        <div class="slide fade">
+          <img src="./src/assets/ANUNCIO.png" alt="">
+        </div>
+
+        <div class="slide fade">
+          <img src="./src/assets/ANUNCIO.png" alt="">
+        </div>
+
+        <a class="anterior" onclick="passarSlides(-1)">&#10094;</a>
+        <a class="proxima" onclick="passarSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="botoes">
+        <span class="botao" onclick="slideAtual(1)"></span>
+        <span class="botao" onclick="slideAtual(2)"></span>
+        <span class="botao" onclick="slideAtual(3)"></span>
       </div>
     </header>
 
@@ -97,5 +109,7 @@
         <p class="seller">Vendido por <strong>Americanas</strong></p>
       </div>
     </section>
+
+    <script src="./main.js"></script>
   </body>
 </html>

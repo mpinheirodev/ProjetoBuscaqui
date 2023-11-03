@@ -1,256 +1,285 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: #FAF8F5;
+  background-color: #faf8f5;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 6rem;
-    /* border-bottom: .1rem solid #A7A5A5; */
-    margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+  /* border-bottom: .1rem solid #A7A5A5; */
+  margin-bottom: 1rem;
 }
 
 .categorias {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .categorias i {
-    padding: 0 .4rem;
+  padding: 0 0.4rem;
 }
 
 .links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.cupons, .cashback, .forum {
-    display: flex;
-    align-items: center;
-    padding: .9rem;
+.cupons,
+.cashback,
+.forum {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem;
 }
 
-.cupons i  {
-    margin-right: .4rem;
-    color: yellow;
-    font-size: 1.4rem;
+.cupons i {
+  margin-right: 0.4rem;
+  color: yellow;
+  font-size: 1.4rem;
 }
 
 .cashback i {
-    margin-right: .4rem;
-    color: green;
-    font-size: 1.4rem;
+  margin-right: 0.4rem;
+  color: green;
+  font-size: 1.4rem;
 }
 
 .forum i {
-    margin-right: .4rem;
-    color: red;
-    font-size: 1.4rem;
+  margin-right: 0.4rem;
+  color: red;
+  font-size: 1.4rem;
 }
 
 .usuario {
-    display: flex;
-    align-items: center;
-    padding: 0 .5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
 }
 
 .usuario i {
-    padding: 0 .8rem;
-    font-size: 1.6rem;
+  padding: 0 0.8rem;
+  font-size: 1.6rem;
 }
 
 .busca {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .busca i {
-    color: #A7A5A5;
-    margin-left: -1.6rem;
+  color: #a7a5a5;
+  margin-left: -1.6rem;
 }
 
 .busca input {
-    padding: .6rem;
-    border-radius: .8rem;
-    border: .1rem solid #A7A5A5;
-    width: 20rem;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #a7a5a5;
+  width: 20rem;
 }
 
-.banner-anuncios {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ----------- HEADER ---------- */
+
+.carrossel-banner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-.banner-anuncios img {
-    width: 80%;
+.slide {
+  display: none;
+  z-index: -1;
 }
 
-.banner-anuncios i {
-    font-size: 3rem;
-    z-index: 1;
-    color: #e2e1e1;
-    opacity: 0.7;
-    cursor: pointer;
+.anterior,
+.proxima {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -1.375rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.188rem 0.188rem 0;
+  user-select: none;
 }
 
-.banner-anuncios #seta-esquerda {
-    margin-right: -3rem;
+.anterior {
+  left: 15rem;
 }
 
-.banner-anuncios #seta-direita {
-    margin-left: -3rem;
-}
-
-.banner-anuncios i:hover {
-    color: #fff;
-    opacity: 0.9;
-}
-
-.botao-carrossel {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.proxima {
+  right: 15rem;
 }
 
 .botao {
-    border-radius: 50%;
-    background-color: #ffffff;
-    width: 15px;
-    height: 15px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    border-color: #ffffff;
+  cursor: pointer;
+  height: 0.938rem;
+  width: 0.938rem;
+  background-color: #fff;
+  border: 0.2rem solid transparent;
+  border-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
+.botoes {
+  margin-top: -2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ativo {
+  background-color: #b81414;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* ---------- SESSÃO DE PRODUTOS ---------- */
+
 .lista-produtos {
-    padding: 6rem;
+  padding: 6rem;
 }
 
 .emphasis {
-    width: 175px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 14px;
-    background: #FED6B9;
-    border: 0;
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1.04px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: all 0.2s ease;
-    cursor: pointer;
+  width: 175px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #fed6b9;
+  border: 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.04px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .emphasis .emphasis-icon {
-    padding-right: 7px;
-    width: 11%;
+  padding-right: 7px;
+  width: 11%;
 }
 
 .emphasis:hover {
-    transform: translate(1px, 0px);
-    background: #f8c29c;
+  transform: translate(1px, 0px);
+  background: #f8c29c;
 }
 
 .card-wrapper {
-    width: 242px;
-    height: 355px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #ffffff;
-    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 242px;
+  height: 355px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .card-wrapper .img-product {
-    margin-top: 10px;
-    width: 170px;
-    height: 119.282px;
-    flex-shrink: 0;
+  margin-top: 10px;
+  width: 170px;
+  height: 119.282px;
+  flex-shrink: 0;
 }
 
 .card-wrapper .name-product {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .card-wrapper .value-product {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card-wrapper .value-product h2 {
-    padding-left: 2px;
-    font-size: 52px;
-    font-weight: 600;
-    color: #000;
-    margin: 0;
+  padding-left: 2px;
+  font-size: 52px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
 }
 
 .card-wrapper .value-product h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #000;
-    margin-top: 7px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 7px;
 }
 
 .card-wrapper .value-product h4 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #000;
-    margin-top: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 36px;
 }
 
 .card-wrapper button {
-    width: 195px;
-    height: 39px;
-    flex-shrink: 0;
-    border: 0;
-    border-radius: 15px;
-    background: rgba(184, 20, 20, 0.85);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 700;
-    transition: all 0.2s ease;
-    cursor: pointer;
+  width: 195px;
+  height: 39px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 15px;
+  background: rgba(184, 20, 20, 0.85);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .card-wrapper i {
-    flex-shrink: 0;
-    padding-left: 4px;
-    fill: #FFF;
-    stroke-width: 0.4px;
-    stroke: #FFF;
+  flex-shrink: 0;
+  padding-left: 4px;
+  fill: #fff;
+  stroke-width: 0.4px;
+  stroke: #fff;
 }
 
-.card-wrapper button:hover{
-    transform: translate(0px, 1px);
-    background: rgb(160, 3, 3);
+.card-wrapper button:hover {
+  transform: translate(0px, 1px);
+  background: rgb(160, 3, 3);
 }
 
 .card-wrapper .seller {
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
 }
