@@ -114,15 +114,22 @@ body {
 }
 
 
+/* Estilização Elementos Esquerda */
+
+.elementos_esquerda {
+    margin-top: 30px;
+    margin-left: 98px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Preço */
 
 .fundo_preco {
-    margin-top: 30px;
-    margin-left: 98px;
     width: 342px;
     height: 108px;
     border-radius: 30px;
-    position: absolute;
+    position: relative;
     background: #FFFFFE;
     box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -202,3 +209,85 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 /* Capacidade */
+
+.fundo_capacidade {
+    width: 342px;
+    height: 196px; 
+    margin-top: 20px;
+    border-radius: 30px;
+    background: #FFFFFE;
+    position: relative;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_capacidade {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 18px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 510;
+}
+
+.botao_capacidade {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.flecha_capacidade {
+    font-size: 1rem;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.conteudo_capacidade {
+    margin-left: 20px;
+}
+
+/* Marcas */
+
+.fundo_marcas {
+    width: 342px;
+    margin-top: 20px;
+    border-radius: 30px;
+    position: relative;
+    background: #FFFFFE;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_marcas {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 510;
+}
+
+/* Lojas */
+
+.fundo_lojas {
+    width: 342px;
+    margin-top: 20px;
+    border-radius: 30px;
+    position: relative;
+    background: #FFFFFE;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.titulo_lojas {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 510;
+}
