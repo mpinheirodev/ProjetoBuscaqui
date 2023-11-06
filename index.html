@@ -35,24 +35,23 @@
       </div>
 
       <!-- categorias -->
-      <div class="categorias">
-        <h3>Categorias</h3>
-        <i class="fa-solid fa-chevron-down"></i>
-      </div>
-
-      <div class="lista-categorias">
-        <ul>
-          <li>Eletrodoméstico</li>
-          <li>Eletrônicos</li>
-          <li>Celulares e telefones</li>
-          <li>Informática e escritório</li>
-          <li>Games, jogos e brinquedos</li>
-          <li>Auto peças e acessórios</li>
-          <li>Casa e jardim</li>
-          <li>Esporte e lazer</li>
-          <li>Utilidade doméstica</li>
-          <li>Todas as categorias</li>
-        </ul>
+      <div class="dropdown-categoria">
+        <div class="categorias" onclick="myFunction()">
+          <h3>Categorias</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="dropdown" class="lista-categorias">
+          <a href="#">Eletrodoméstico</a>
+          <a href="#">Eletrônicos</a>
+          <a href="#">Celulares e telefones</a>
+          <a href="#">Informática e escritório</a>
+          <a href="#">Games, jogos e brinquedos</a>
+          <a href="#">Auto peças e acessórios</a>
+          <a href="#">Casa e jardim</a>
+          <a href="#">Esporte e lazer</a>
+          <a href="#">Utiadade doméstica</a>
+          <a href="#">Todas as categorias</a>
+        </div>
       </div>
 
       <!-- Área de busca -->
@@ -110,8 +109,8 @@
       </div>
     </header>
 
-    <!-- SESSÃO DE PRODUTOS -->
-    <section class="lista-produtos">
+    <!-- SESSÃO DE PRODUTOS EM DESTAQUE -->
+    <section class="lista-produtos-destaque">
       <div class="botao-destaque">
         <button class="destaques">
           <img class="destaques-icone" src="./src/assets/fogo.svg" />Destaques
@@ -129,7 +128,8 @@
             <h4>,90</h4>
           </div>
           <a href="./comparacaodepreco.html"
-            ><button>Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+            ><button>
+              Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
           ></a>
           <p class="vendedor">Vendido por <strong>Americanas</strong></p>
         </div>
@@ -145,12 +145,17 @@
             <h4>,90</h4>
           </div>
           <a href="./comparacaodepreco.html"
-            ><button>Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+            ><button>
+              Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
           ></a>
           <p class="vendedor">Vendido por <strong>Americanas</strong></p>
         </div>
       </div>
-      
+    </section>
+
+    <!-- LISTA DE PRODUTOS -->
+    <section class="lista-produtos">
+      <h2>Aqui teremos uma lista de produtos</h2>
     </section>
 
     <script src="./main.js"></script>

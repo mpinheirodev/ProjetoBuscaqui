@@ -3,11 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --color-red: #b81414;
+  --color-yellow: #FFC107;
+  --color-green: #4caf50;
+  --color-gray: #808080;
+  --color-text-gray: #dfdddd;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grafite: #242121;
+  --color-light: #f5f5f5;
+  --color-bg: #faf8f5;
+  --color-bg-white: #ffffff;
+  --color-bg2: #abadb4;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
 }
 
 body {
-  background-color: #faf8f5;
+  background-color: var(--color-bg);
 }
 
 .navbar {
@@ -16,45 +35,63 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 6rem;
-  /* border-bottom: .1rem solid #A7A5A5; */
   margin-bottom: 1rem;
+}
+
+.window-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-categoria {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  margin-left: -4rem;
 }
 
 .categorias {
   display: flex;
   align-items: center;
   cursor: pointer;
-  position: relative;
 }
 
 .categorias i {
-  padding: 0 .4rem;
+  padding-left: .4rem;
+}
+
+.categorias:hover, .categorias:focus{
+  color: #b81414;
 }
 
 .lista-categorias {
   display: none;
+  min-width: 300px;
   position: absolute;
-  top: 4rem;
-  left: 26rem;
+  top: 2rem;
   background-color: #fff;
   z-index: 1;
-  padding: 1rem;
   border-radius: .8rem;
   box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
 }
 
-.lista-categorias ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: .8rem;
+.lista-categorias a {
+  color: #000;
+  display: block;
+  padding: .6rem 1rem;
 }
 
-.lista-categorias li {
-  cursor: pointer;
+.lista-categorias a:hover{
+  background-color: #b81414;
+  color: #fff;
+  border-radius: .2rem;
 }
 
-.categorias:hover + .lista-categorias {
+.mostrar {
   display: block;
 }
 
@@ -68,35 +105,35 @@ body {
 .forum {
   display: flex;
   align-items: center;
-  padding: 0.9rem;
+  padding: .9rem;
 }
 
 .cupons i {
-  margin-right: 0.4rem;
-  color: yellow;
+  margin-right: .4rem;
+  color: var(--color-yellow);
   font-size: 1.4rem;
 }
 
 .cashback i {
-  margin-right: 0.4rem;
-  color: green;
+  margin-right: .4rem;
+  color: var(--color-green);
   font-size: 1.4rem;
 }
 
 .forum i {
-  margin-right: 0.4rem;
-  color: red;
+  margin-right: .4rem;
+  color: var(--color-red);
   font-size: 1.4rem;
 }
 
 .usuario {
   display: flex;
   align-items: center;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
 }
 
 .usuario i {
-  padding: 0 0.8rem;
+  padding: 0 .8rem;
   font-size: 1.6rem;
 }
 
@@ -111,9 +148,9 @@ body {
 }
 
 .busca input {
-  padding: 0.6rem;
-  border-radius: 0.8rem;
-  border: 0.1rem solid #a7a5a5;
+  padding: .6rem;
+  border-radius: .8rem;
+  border: .1rem solid #a7a5a5;
   width: 20rem;
 }
 
@@ -126,6 +163,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  user-select: none;
 }
 
 .slide {
@@ -145,7 +183,7 @@ body {
   font-weight: bold;
   font-size: 1.4rem;
   transition: 0.6s ease;
-  border-radius: 0 0.188rem 0.188rem 0;
+  border-radius: 0 .188rem .188rem 0;
   user-select: none;
 }
 
@@ -192,9 +230,9 @@ body {
 }
 
 
-/* ---------- SESSÃO DE PRODUTOS ---------- */
+/* ---------- SESSÃO DE PRODUTOS EM DESTAQUE ---------- */
 
-.lista-produtos {
+.lista-produtos-destaque {
   padding: 6rem;
   display: flex;
   flex-direction: column;
@@ -324,6 +362,8 @@ body {
   margin-top: 10px;
 }
 
+/* ---------- NAVEGAÇÃO ---------- */
+
 .historico_navegacao {
   display: flex;
   align-items: center;
@@ -345,3 +385,6 @@ body {
 .diretorio_atual {
   font-weight: 470;
 }
+
+
+/* ---------- SECTION DE PRODUTOS ---------- */
