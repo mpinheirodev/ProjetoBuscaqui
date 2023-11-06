@@ -26,13 +26,33 @@
     <nav class="navbar">
       <!-- logo -->
       <div class="logo_nav">
-        <img src="./src/assets/BUSCAQUI_LOGO.png" alt="Logo" class="img_logo" />
+        <a href="./index.html"
+          ><img
+            src="./src/assets/BUSCAQUI_LOGO.png"
+            alt="Logo"
+            class="img_logo"
+        /></a>
       </div>
 
       <!-- categorias -->
       <div class="categorias">
         <h3>Categorias</h3>
         <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div class="lista-categorias">
+        <ul>
+          <li>Eletrodoméstico</li>
+          <li>Eletrônicos</li>
+          <li>Celulares e telefones</li>
+          <li>Informática e escritório</li>
+          <li>Games, jogos e brinquedos</li>
+          <li>Auto peças e acessórios</li>
+          <li>Casa e jardim</li>
+          <li>Esporte e lazer</li>
+          <li>Utilidade doméstica</li>
+          <li>Todas as categorias</li>
+        </ul>
       </div>
 
       <!-- Área de busca -->
@@ -92,24 +112,45 @@
 
     <!-- SESSÃO DE PRODUTOS -->
     <section class="lista-produtos">
-      <button class="emphasis">
-        <img class="emphasis-icon" src="./src/assets/fogo.svg" />Destaques
-      </button>
-      <div class="card-wrapper">
-        <img class="img-product" src="./src/assets/img.png" />
-        <p class="name-product">
-          Notebook Lenovo Ideapad 3i I3-1115G4 4GB 256GB SSD W11 15.6" Prata
-        </p>
-        <div class="value-product">
-          <h3>R$</h3>
-          <h2>1861</h2>
-          <h4>,90</h4>
-        </div>
-        <a href="./comparacaodepreco.html"
-          ><button>Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
-        ></a>
-        <p class="seller">Vendido por <strong>Americanas</strong></p>
+      <div class="botao-destaque">
+        <button class="destaques">
+          <img class="destaques-icone" src="./src/assets/fogo.svg" />Destaques
+        </button>
       </div>
+      <div class="produtos">
+        <div class="card-produto">
+          <img class="img-produto" src="./src/assets/img.png" />
+          <p class="nome-produto">
+            Notebook Lenovo Ideapad 3i I3-1115G4 4GB 256GB SSD W11 15.6" Prata
+          </p>
+          <div class="valor-produto">
+            <h3>R$</h3>
+            <h2>1861</h2>
+            <h4>,90</h4>
+          </div>
+          <a href="./comparacaodepreco.html"
+            ><button>Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+          ></a>
+          <p class="vendedor">Vendido por <strong>Americanas</strong></p>
+        </div>
+
+        <div class="card-produto">
+          <img class="img-produto" src="./src/assets/img.png" />
+          <p class="nome-produto">
+            Notebook Acer Aspire nitro I5-1115G4 4GB 256GB SSD W11 15.6" Prata
+          </p>
+          <div class="valor-produto">
+            <h3>R$</h3>
+            <h2>2561</h2>
+            <h4>,90</h4>
+          </div>
+          <a href="./comparacaodepreco.html"
+            ><button>Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+          ></a>
+          <p class="vendedor">Vendido por <strong>Americanas</strong></p>
+        </div>
+      </div>
+      
     </section>
 
     <script src="./main.js"></script>

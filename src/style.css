@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
 
 body {
@@ -22,10 +23,39 @@ body {
 .categorias {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  position: relative;
 }
 
 .categorias i {
-  padding: 0 0.4rem;
+  padding: 0 .4rem;
+}
+
+.lista-categorias {
+  display: none;
+  position: absolute;
+  top: 4rem;
+  left: 26rem;
+  background-color: #fff;
+  z-index: 1;
+  padding: 1rem;
+  border-radius: .8rem;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+}
+
+.lista-categorias ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.lista-categorias li {
+  cursor: pointer;
+}
+
+.categorias:hover + .lista-categorias {
+  display: block;
 }
 
 .links {
@@ -166,13 +196,14 @@ body {
 
 .lista-produtos {
   padding: 6rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.emphasis {
-  width: 175px;
-  height: 40px;
+.destaques {
+  padding: .8rem 1.4rem;
   flex-shrink: 0;
-  border-radius: 14px;
+  border-radius: .875rem;
   background: #fed6b9;
   border: 0;
   color: #000;
@@ -185,19 +216,27 @@ body {
   text-align: center;
   transition: all 0.2s ease;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
-.emphasis .emphasis-icon {
-  padding-right: 7px;
-  width: 11%;
+.destaques .destaques-icone {
+  padding-right: .438rem;
+  width: 15%;
 }
 
-.emphasis:hover {
+.destaques:hover {
   transform: translate(1px, 0px);
   background: #f8c29c;
 }
 
-.card-wrapper {
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.card-produto {
   width: 242px;
   height: 355px;
   flex-shrink: 0;
@@ -209,14 +248,14 @@ body {
   text-align: center;
 }
 
-.card-wrapper .img-product {
+.card-produto .img-produto {
   margin-top: 10px;
   width: 170px;
   height: 119.282px;
   flex-shrink: 0;
 }
 
-.card-wrapper .name-product {
+.card-produto .nome-produto {
   font-size: 14px;
   font-weight: 400;
   margin: 5px;
@@ -224,12 +263,12 @@ body {
   margin-right: 10px;
 }
 
-.card-wrapper .value-product {
+.card-produto .valor-produto {
   display: flex;
   justify-content: center;
 }
 
-.card-wrapper .value-product h2 {
+.card-produto .valor-produto h2 {
   padding-left: 2px;
   font-size: 52px;
   font-weight: 600;
@@ -237,21 +276,21 @@ body {
   margin: 0;
 }
 
-.card-wrapper .value-product h3 {
+.card-produto .valor-produto h3 {
   font-size: 24px;
   font-weight: 600;
   color: #000;
   margin-top: 7px;
 }
 
-.card-wrapper .value-product h4 {
+.card-produto .valor-product h4 {
   font-size: 14px;
   font-weight: 600;
   color: #000;
   margin-top: 36px;
 }
 
-.card-wrapper button {
+.card-produto button {
   width: 195px;
   height: 39px;
   flex-shrink: 0;
@@ -266,7 +305,7 @@ body {
   cursor: pointer;
 }
 
-.card-wrapper i {
+.card-produto i {
   flex-shrink: 0;
   padding-left: 4px;
   fill: #fff;
@@ -274,12 +313,12 @@ body {
   stroke: #fff;
 }
 
-.card-wrapper button:hover {
+.card-produto button:hover {
   transform: translate(0px, 1px);
   background: rgb(160, 3, 3);
 }
 
-.card-wrapper .seller {
+.card-produto .vendedor {
   font-size: 12px;
   font-weight: 400;
   margin-top: 10px;
