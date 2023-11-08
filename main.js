@@ -11,12 +11,12 @@ window.addEventListener("scroll", () => {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// controles Proxima/anterior 
 function passarSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
+// Thumbnail imagem controles
 function slideAtual(n) {
   showSlides((slideIndex = n));
 }
