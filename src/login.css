@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Arial", sans-serif; 
+    font-family: "Montserrat", sans-serif;
 }
 body{
     width: 100%;
@@ -10,6 +10,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(assets/fundo.jpg);
+
 
 }
 form{
@@ -61,11 +63,45 @@ div.input .input:focus ~ label,div.input .input:valid ~label{
     height: 100vh;
 
 }
+.box {
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.box label {
+    margin-right: 20px; 
+}
+
+.box a {
+    display: inline-block;; 
+    margin-top: 0px; 
+}
+.boxcadastro{
+    font-size: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.conta a{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.conta a:hover{
+    color: red;
+}
 .boximg{
     width: 300px;
     height: 500px;
     border-radius: 2px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.1);
     background-image: url(assets/capa.png);
     display: flex;
     justify-content: center;
@@ -78,19 +114,29 @@ div.input .input:focus ~ label,div.input .input:valid ~label{
     height: 500px;
     background-color: white;
     border-radius: 2px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
-}
-.icones{
+    flex-direction: column;
 
+}
+.icones {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 20px;    
+    margin-top: 20px;
+}
+
+.icones a {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.icones img {
+    width: 30px; 
+    height: auto; 
 }
 .box {
     display: flex;
@@ -101,10 +147,23 @@ div.input .input:focus ~ label,div.input .input:valid ~label{
     margin-right: 5px; 
     margin-left: 15px;
 }
-.botao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25%;
+.button {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 6px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 6px 40px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+  }
+  .button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
 
