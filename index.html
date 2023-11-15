@@ -22,9 +22,9 @@
     <title>Buscaqui 🔥</title>
   </head>
   <body>
-    <!-- BARRA DE NAVEGAÇÃO -->
+    <!-- Barra de navegação -->
     <nav class="navbar">
-      <!-- logo -->
+      <!-- Logo -->
       <div class="logo_nav">
         <a href="./index.html"
           ><img
@@ -34,7 +34,7 @@
         /></a>
       </div>
 
-      <!-- categorias -->
+      <!-- Categorias -->
       <div class="dropdown-categoria">
         <div class="categorias" onclick="myFunction()">
           <h3>Categorias</h3>
@@ -60,45 +60,53 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
 
-      <!-- grupo de links -->
+      <!-- Grupo de links -->
       <div class="links">
         <div class="cupons">
-          <i class="fa-solid fa-percent"></i>
-          <h4>Cupons</h4>
+          <a href="#">
+            <i class="fa-solid fa-percent"></i>
+            <h4>Cupons</h4>
+          </a>
         </div>
         <div class="cashback">
-          <i class="fa-solid fa-hand-holding-dollar"></i>
-          <h4>Cashback</h4>
+          <a href="#">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h4>Cashback</h4>
+          </a>
         </div>
         <div class="forum">
-          <i class="fa-regular fa-comments"></i>
-          <h4>Fórum</h4>
+          <a href="#">
+            <i class="fa-regular fa-comments"></i>
+            <h4>Fórum</h4>
+          </a>
         </div>
       </div>
 
-      <!-- grupo de usuário -->
+      <!-- Grupo de usuário -->
       <div class="usuario">
         <i class="fa-regular fa-bell"></i>
-        <i class="fa-regular fa-circle-user"></i>
+        <a href="./login.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
       </div>
     </nav>
 
-    <!-- HEADER -->
+
+    <!-- Banner -->
     <header>
       <div class="carrossel-banner">
-        <div class="slide fade">
-          <img src="./src/assets/ANUNCIO.png" alt="" />
-        </div>
-
-        <div class="slide fade">
-          <img src="./src/assets/ANUNCIO.png" alt="" />
-        </div>
-
-        <div class="slide fade">
-          <img src="./src/assets/ANUNCIO.png" alt="" />
-        </div>
-
         <a class="anterior" onclick="passarSlides(-1)">&#10094;</a>
+        <div class="slide fade">
+          <img src="./src/assets/ANUNCIO.png" alt="" />
+        </div>
+
+        <div class="slide fade">
+          <img src="./src/assets/ANUNCIO.png" alt="" />
+        </div>
+
+        <div class="slide fade">
+          <img src="./src/assets/ANUNCIO.png" alt="" />
+        </div>
         <a class="proxima" onclick="passarSlides(1)">&#10095;</a>
       </div>
 
@@ -109,7 +117,8 @@
       </div>
     </header>
 
-    <!-- SESSÃO DE PRODUTOS EM DESTAQUE -->
+
+    <!-- Seção de produtos em destaque -->
     <section class="lista-produtos-destaque">
       <div class="botao-destaque">
         <button class="destaques">
@@ -137,7 +146,10 @@
         <div class="card-produto">
           <img class="img-produto" src="./src/assets/img.png" />
           <p class="nome-produto">
-            Notebook Gamer Acer Nitro 5 Intel Core I7-11800H, 16GB RAM, NVIDIA RTX3050, SSD 512GB, 15.6" LED FHD IPS, Linux, Preto
+            Notebook Gamer Acer Nitro 5 Intel Core I7-11800H, 16GB RAM, NVIDIA
+            RTX3050, SSD 512GB, 15.6" LED FHD IPS, Linux, Preto
+          </p>
+
           <div class="valor-produto">
             <h3>R$</h3>
             <h2>2561</h2>
@@ -152,7 +164,8 @@
       </div>
     </section>
 
-    <!-- LISTA DE PRODUTOS -->
+
+    <!-- Seção de produtos -->
     <section class="lista-produtos">
       <h2>Produtos que talvez possa se interessar</h2>
       <div class="long-card-produto">
@@ -164,15 +177,33 @@
             </h2>
           </div>
           <div class="valores">
-            <h3>R$1.861,90</h4>
+            <h3>R$1.861,90</h3>
             <p>| Vendido por <b>Americanas</b></p>
           </div>
         </div>
         <div class="data">
-          <i class="fa-regular fa-clock"></i><p>Nov / 23</p>
+          <i class="fa-regular fa-clock"></i>
+          <p>Nov / 23</p>
         </div>
       </div>
     </section>
+
+    
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <img src="./src/assets/BUSCAQUI_LOGO.png" alt="" />
+      <div class="sobre">
+        <h3>Sobre</h3>
+        <a href="#">Quem somos</a>
+      </div>
+      <div class="trabalho">
+        <h3>Disciplina</h3>
+        <p>
+          Trabalho desenvolvido <br />para as disciplinas de UI/UX Design <br />
+          e Web Coding
+        </p>
+      </div>
+    </footer>
 
     <script src="./main.js"></script>
   </body>
