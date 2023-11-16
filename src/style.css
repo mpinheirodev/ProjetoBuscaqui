@@ -270,7 +270,7 @@ a {
 
 .produtos {
   display: flex;
-  gap: 2rem;
+  gap: 2.7rem;
 }
 
 .card-produto {
