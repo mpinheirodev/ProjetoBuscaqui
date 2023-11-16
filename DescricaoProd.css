@@ -85,11 +85,6 @@ body {
     border: .1rem solid #A7A5A5;
     width: 20rem;
 }
-
-
-
-
-
 .card-wrapper {
     width: 242px;
     height: 355px;
@@ -240,7 +235,7 @@ body {
     height: 40px; 
     margin: 1px;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .thumbnail:hover {
@@ -267,3 +262,108 @@ body {
     margin-top: 110px;
 }
 
+.promocao_botao {
+    background-color: #b81414d9;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #b81414d9;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed; 
+    top: 460px; 
+    left: 505px; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .promocao_botao:hover {
+    background-color: #ffffff; 
+    color: #b81414d9; 
+    border-color: #b81414d9; 
+  }
+  
+  .salvar-btn {
+    background-color: #ffffff; 
+    color: #b81414d9; 
+    padding: 01px 34px;
+    font-size: 18px;
+    border: 2px solid #b81414d9; 
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    top: 150px;
+    right: 244px;
+  }
+  
+  .salvar-btn:hover {
+    background-color: #b81414d9; 
+    color: #ffffff; 
+    border-color: #ffffff; 
+  }
+  
+  .coracao {
+    font-size: 31px; 
+    color: #b81414d9; 
+    margin-right: 8px;
+    position: relative;
+    display: inline-block;
+  }
+  .salvar-btn:hover .coracao {
+    color: #ffffff; 
+  }
+
+  .tabs {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 96px;
+  }
+  
+  .tab-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    margin-right: 30px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .tab-button.active {
+    border: 2px solid #DEDEDE;
+    background-color: #DEDEDE;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  .cifrao {
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px; 
+  }
+  .grafico {
+    font-size: 18px;
+    color: white; 
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: 5px; 
+  }
+  
