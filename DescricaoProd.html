@@ -12,12 +12,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-u1q23m50eMqUCGc9saMNE8uvmznAdOtkP5IeRvbWg8gIlxU5w0p0ma8I3oJmTuLQ" crossorigin="anonymous">
+  <script src="ScriptDescricao.js"></script>
+
 
   <title>Buscaqui 🔥</title>
 </head>
 <body>
   <!-- BARRA DE NAVEGAÇÃO -->
   <nav class="navbar">
+    
     <!-- logo -->
     <div class="logo_nav">
       <img src="./src/assets/BUSCAQUI_LOGO.png" alt="Logo" class="img_logo" />
@@ -84,24 +87,28 @@
   <!-- Área de imagens e informação de valores do produto -->
   <div class="image-gallery">
     <div class="main-image-container">
+
       <!-- Imagem Principal do produto quando é clicada -->
       <img class="imagem_principal" src="https://encurtador.com.br/svKX3" alt="Imagem Principal">
+
       <!-- Loja verificada -->
       <div class="loja_verificada">Loja Verificada</div>
+
       <!-- Preço do produto -->
       <div class="menor_preco">menor preço por Mercado Livre</div>
       <div class="preco"><h1>R$ 3630</h1></div>
       <div class="preco_menor"> <h5>,00</h5></div>
       <div class="parcela">ou 10x de R$ 363,00 com juros</div>
+
       <!-- Botão de promoção -->
-      <button class="promocao_botao">
-  Pegar Promoção <i class="fas fa-arrow-up-right-from-square"></i>
-</button>
+      <button class="promocao_botao">Pegar Promoção <i class="fas fa-arrow-up-right-from-square"></i></button>
+
       <!-- Botão de Salvar Oferta -->
       <button class="salvar-btn">
         <span class="coracao">&#9825;</span>Salvar Oferta
       </button>
     </div>
+
     <!-- Pequenas imagens abaixo da imagem pricnipal para ser clicáveis -->
     <div class="thumbnails">
       <img class="thumbnail" src="https://encurtador.com.br/svKX3" alt="Miniatura 1">
@@ -109,43 +116,54 @@
       <img class="thumbnail" src="https://encurtador.com.br/cwHOZ" alt="Miniatura 3">
       <img class="thumbnail" src="https://encurtador.com.br/wCER9" alt="Miniatura 4">
     </div>
-  </div>
+
 <!-- Abas abaixo das imagens -->
-<div class="tabs">
-  <button class="tab-button active" onclick="showTab('precos')">
-    <div class="cifrao">$
-    </div> Preços
-  </button>
-  <button class="tab-button active" onclick="showTab('historico')">
-    <div class="tab-title">
-      <i class="fas fa-chart-bar"></i>
-      Histórico
-    </div>
-  </button>
-  <div class="tab-content" id="historico">
+  <div class="tabs">
+      <button class="tab-button" onclick="showTab('precos')" > <i class="fas fa-dollar-sign"></i> Preços</button>
+      <button class="tab-button" onclick="showTab('historico')"> <i class="fas fa-chart-bar"></i> Histórico</button>
+      <button class="tab-button" onclick="showTab('descricao')"> <i class="fas fa-list"></i> Descrição</button>
+      <button class="tab-button" onclick="showTab('avaliacoes')"> <i class="far fa-star"></i> Avaliações</button>
+
+<!-- Conteúdo para cada aba -->
+  <div id="precos" class="tab-content active">
   </div>
-  <button class="tab-button" onclick="showTab('descricao')"> <i class="fas fa-list"></i> Descrição</button>
-  <button class="tab-button" onclick="showTab('avaliacoes')"> <i class="far fa-star"></i> Avaliações</button>
+
+  <div id="historico" class="tab-content">
+  </div>
+
+  <div id="descricao" class="tab-content">
+    <p>bum</p><br><br><br><br>p
+  </div>
+
+  <div id="avaliacoes" class="tab-content">
+  </div>
+
+<!-- Card de variação de preço -->
+  <div class="card">
+    <div class="simbolo_preco">&#128293;<span class="cor_vermelha">aqui</span> tem preço</div>
+    <div class="mudanca_preco">
+      <div class="indicador"></div>
+      <div class="seta"></div>
+    </div>
+    <div class="info_preco">
+      <p>Com base nos últimos 30 dias, o valor está próximo da média de R$ <span class="valor">4.049,00</span>.</p>
+    </div>
+    <button class="botao_historico">Ver Histórico</button>
+  </div>
+
+<!-- Card de notificação -->
+<div class="notification-card">
+  <div class="notification-text">
+    <div class="bold-text"><i class="fa-solid fa-bell"></i> Quer economizar?</div>
+    <div class="normal-text">Te avisamos quando o preço melhorar!</div>
+  </div>
+  <label class="switch">
+    <input type="checkbox" id="toggleSwitch">
+    <span class="slider"></span>
+  </label>
 </div>
 
-<!-- Conteúdos correspondentes para cada aba -->
-<div id="precos" class="tab-content active">
-  
-</div>
-
-<div id="historico" class="tab-content">
-  <!-- Conteúdo de Histórico aqui... -->
-</div>
-
-<div id="descricao" class="tab-content">
-  <!-- Conteúdo de Descrição aqui... -->
-</div>
-
-<div id="avaliacoes" class="tab-content">
-  <!-- Conteúdo de Avaliações aqui... -->
-</div>
-
-  <script src="ScriptDescricao.js"></script>
-
+ 
+ 
 </body>
 </html>
