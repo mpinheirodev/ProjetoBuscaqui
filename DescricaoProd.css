@@ -321,8 +321,6 @@ body {
   .tabs {
     display: flex;
     margin-top: 20px;
-    margin-left: 0px;
-    overflow: hidden;
   }
   
   .tab-button {
@@ -444,6 +442,7 @@ body {
     position: absolute;
     left: 1100px;
     top: 550px;
+    border: 2px solid #a7a5a5;
   }
   
   .notification-text {
