@@ -100,10 +100,6 @@ a {
   border-radius: 0 0 .5rem .5rem;
 }
 
-.mostrar {
-  display: block;
-}
-
 .links {
   display: flex;
   align-items: center;
@@ -145,21 +141,14 @@ a {
 #notificacao {
   display: flex;
   cursor: pointer;
-  position: relative;
 }
 
 .notificacao {
-  display: flex;
-  gap: 1rem;
-  position: relative;
-}
-
-.dropdown-notificacao {
-  /* display: none; */
-  /* min-width: 300px; */
+  display: none;
+  min-width: 300px;
   position: absolute;
-  top: 1rem;
-  right: .2rem;
+  top: 4rem;
+  right: 7rem;
   background-color: var(--color-bg-white);
   z-index: 1;
   border-radius: .6rem;
@@ -167,10 +156,43 @@ a {
   padding: 1rem;
 }
 
+.dropdown-notificacao {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
 .lista-notificacao {
   display: flex;
   flex-direction: column;
   gap: .5rem;
+}
+
+.lista-notificacao a {
+  display: flex;
+  align-items: center;
+  padding: .6rem;
+  border: .02rem solid var(--color-gray);
+  border-radius: .4rem;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+}
+
+.lista-notificacao a:hover {
+  border: .02rem solid var(--color-red);
+  background-color: var(--color-bg);
+}
+
+.lista-notificacao i {
+  color: var(--color-red);
+  margin-right: .4rem;
+}
+
+.mostrar {
+  display: block;
+}
+
+.usuario{
+  user-select: none;
 }
 
 .dot {
@@ -680,7 +702,7 @@ div.input .input:valid ~ label {
   height: 500px;
   border-radius: 2px;
   box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.1);
-  background-image: url(assets/capa.png);
+  background-image: url("../assets/capa.png");
   display: flex;
   justify-content: center;
   align-items: center;

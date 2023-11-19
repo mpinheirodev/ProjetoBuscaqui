@@ -41,6 +41,7 @@ function showSlides(n) {
   botoes[slideIndex - 1].className += " ativo";
 }
 
+
 // Dropdown de categorias
 
 const Dropdown = document.querySelector(".categorias");
@@ -56,6 +57,21 @@ document.addEventListener('mousedown', (e) => {
     DropdownContent.classList.remove("mostrar");
   }
 })
+
+
+// Dropdown de notificações
+
+const DropdownNotificacoes = document.querySelector("#notificacao");
+const DropdownNotificacoesContent = document.querySelector(".notificacao");
+
+document.addEventListener('mousedown', (e) => {
+  if (DropdownNotificacoes.contains(e.target)) {
+    DropdownNotificacoesContent.classList.toggle("mostrar");
+  } else {
+    DropdownNotificacoesContent.classList.remove("mostrar");
+  }
+})
+
 
 // Modal
 const openModalButton = document.querySelector("#open-modal");
