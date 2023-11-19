@@ -18,7 +18,7 @@
     --color-bg: #faf8f5;
     --color-bg-white: #ffffff;
     --color-bg-destaque: #fed6b9;
-  }
+}
 
 body {
     background-color: var(--color-bg);
@@ -228,9 +228,9 @@ input[type="range"]::-webkit-slider-thumb{
     text-align: end;
 }
 
-/* Capacidade */
+/* Marcas */
 
-.fundo_capacidade {
+.fundo_marcas {
     width: 342px;
     height: 196px; 
     margin-top: 20px;
@@ -240,7 +240,7 @@ input[type="range"]::-webkit-slider-thumb{
     box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.titulo_capacidade {
+.titulo_marcas {
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
@@ -250,7 +250,7 @@ input[type="range"]::-webkit-slider-thumb{
     font-weight: 510;
 }
 
-.botao_capacidade {
+.botao_marcas {
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -260,7 +260,7 @@ input[type="range"]::-webkit-slider-thumb{
     cursor: pointer;
 }
 
-.flecha_capacidade {
+.flecha_marcas {
     font-size: 1rem;
     -moz-transform: scaleY(-1);
     -o-transform: scaleY(-1);
@@ -268,54 +268,43 @@ input[type="range"]::-webkit-slider-thumb{
     transform: scaleY(-1);
 }
 
-.conteudo_capacidade {
+.conteudo_marcas {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
-.conteudo_capacidade input[type="checkbox"] {
+.marcas {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.ajuste_marcas {
+    display: flex;
+    gap: .3rem;
+}
+
+.conteudo_marcas input[type="checkbox"] {
     width: 20px;
     height: 20px;
+    border-radius: 05px;
+    border: 1.5px solid #000;
+}
+
+
+.quantidade {
+    width: 26px;
+    height: 20px;
+    flex-shrink: 0;
     border-radius: 5px;
-}
+    background: #D9D9D9;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: .1rem;
 
-/* Marcas */
-
-.fundo_marcas {
-    width: 342px;
-    margin-top: 20px;
-    border-radius: 30px;
-    position: relative;
-    background: #FFFFFE;
-    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.titulo_marcas {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-bottom: 18px;
-    position: relative;
-    font-size: 20px;
-    font-weight: 510;
-}
-
-/* Lojas */
-
-.fundo_lojas {
-    width: 342px;
-    margin-top: 20px;
-    border-radius: 30px;
-    position: relative;
-    background: #FFFFFE;
-    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.titulo_lojas {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-bottom: 18px;
-    position: relative;
-    font-size: 20px;
-    font-weight: 510;
 }
 
 /* Display dos conteúdos */
@@ -388,7 +377,7 @@ input[type="range"]::-webkit-slider-thumb{
     margin-top: 7px;
 }
   
-.card-produto .valor-product h4 {
+.card-produto .valor-produto h4 {
     font-size: 14px;
     font-weight: 600;
     margin-top: 36px;

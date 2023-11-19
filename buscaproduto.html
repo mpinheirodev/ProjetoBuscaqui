@@ -62,164 +62,214 @@
               <i class="fa-regular fa-bell"></i>
               <i class="fa-regular fa-circle-user"></i>
             </div>
-          </nav>
-    
+        </nav>
+          
         <!-- Histórico Navegação -->
         <div class="historico_navegacao">
           <a href="index.html"><h5>Home</h5></a>
-            <i class="fa-solid fa-chevron-right seta_navegacao"></i>
-            <h6 class="diretorio_atual">Celulares e Smartphones</h6>
+          <i class="fa-solid fa-chevron-right seta_navegacao"></i>
+          <h6 class="diretorio_atual">Eletrodoméstico</h6>
         </div>
-
+  
         <div class="classe_geral">
-        <div class="elementos_esquerda">
-          <!-- Div Preço -->
-          <div class="fundo_preco">
-              <h4 class="titulo_preco">Preço</h4>
+          <div class="elementos_esquerda">
+            <!-- Div Preço -->
+            <div class="fundo_preco">
+                <h4 class="titulo_preco">Preço</h4>
                   <div class="container_faixa">
-                      <div class="faixa_deslizante"></div>
+                    <div class="faixa_deslizante"></div>
                       <input type="range" min="1000" max="12000" value="1000" id="slider-1" oninput="deslizarMin()">
                       <input type="range" min="1000" max="12000" value="12000" id="slider-2" oninput="deslizarMax()">
+                    </div>
+                    <div class="container_preco_atual">
+                        <h6 class="preco_atual">R$ <span id="range1"></span>,00</h6>
+                        <h6 class="preco_atual2">R$ <span id="range2"></span>,00</h6>
+                    </div>
                   </div>
-                  <div class="container_preco_atual">
-                      <h6 class="preco_atual">R$ <span id="range1"></span>,00</h6>
-                      <h6 class="preco_atual2">R$ <span id="range2"></span>,00</h6>
-                  </div>
+                <!--Script-->
+                <script src="src/buscaproduto.js"></script>
+  
+            <!-- Div Marcas -->
+            <div class="fundo_marcas nav_menu">
+              <h4 class="titulo_marcas">Marcas
+                <button class="botao_marcas"><i class="fa-solid fa-chevron-down flecha_capacidade"></i></button>
+              </h4>
+  
+              <!-- Conteúdo Marcas -->
+              <div class="conteudo_marcas">
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="Brastemp" name="Brastemp" value="Brastemp">
+                    <label for="Brastemp">Brastemp</label>
+                  </dev>
+                  <div class="quantidade">22</div>
+                </div>
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="Britânia" name="Britânia" value="Britânia">
+                    <label for="Britânia">Britânia</label>
+                  </dev>
+                  <div class="quantidade">07</div>
+                </div>
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="Consul" name="Consul" value="Consul">
+                    <label for="Consul">Consul</label>
+                  </dev>
+                  <div class="quantidade">02</div>
+                </div>
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="Continental" name="Continental" value="Continental">
+                    <label for="Continental">Continental</label>
+                  </dev>
+                  <div class="quantidade">0</div>
+                </div>
               </div>
-              <!--Script-->
-              <script src="src/buscaproduto.js"></script>
+            </div>
+            
 
-          <!-- Div Capacidade -->
-          <div class="fundo_capacidade nav_menu">
-            <h4 class="titulo_capacidade">Capacidade 
-              <button class="botao_capacidade"><i class="fa-solid fa-chevron-down flecha_capacidade"></i></button>
-            </h4>
-
-            <!-- Conteúdo Capacidade -->
-            <div class="conteudo_capacidade">
-              <input type="checkbox" id="64gb" name="64gb" value="64gb">
-              <label for="64gb">64 GB</label><br>
-              <input type="checkbox" id="128gb" name="64gb" value="64gb">
-              <label for="128gb">128 GB</label><br>
-              <input type="checkbox" id="256gb" name="64gb" value="64gb">
-              <label for="256gb">256 GB</label><br>
-              <input type="checkbox" id="512gb" name="64gb" value="64gb">
-              <label for="512gb">512 GB</label><br>
+            <!-- Div Cor -->
+            <div class="fundo_marcas nav_menu">
+              <h4 class="titulo_marcas">Cor
+                <button class="botao_marcas"><i class="fa-solid fa-chevron-down flecha_capacidade"></i></button>
+              </h4>
+  
+              <!-- Conteúdo Marcas -->
+              <div class="conteudo_marcas">
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="acoescovado" name="acoescovado" value="acoescovado">
+                    <label for="acoescovado">Aço Escovado</label>
+                  </dev>
+                  <div class="quantidade">22</div>
+                </div>
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="branca" name="branca" value="branca">
+                    <label for="branca">Branca</label>
+                  </dev>
+                  <div class="quantidade">07</div>
+                </div>
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="cinza" name="cinza" value="cinza">
+                    <label for="cinza">Cinza</label>
+                  </dev>
+                  <div class="quantidade">02</div>
+                </div>
+                <div class="marcas">
+                  <dev class="ajuste_marcas">
+                    <input type="checkbox" id="prata" name="prata" value="prata">
+                    <label for="prata">Prata</label>
+                  </dev>
+                  <div class="quantidade">0</div>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <!-- Div Marcas -->
-          <div class="fundo_marcas">
-            <h4 class="titulo_marcas">Marcas</h4>
-          </div>
-
-          <!-- Div Lojas -->
-          <div class="fundo_lojas">
-            <h4 class="titulo_lojas">Lojas</h4>
-          </div>
-        </div>
-
-          <!-- Seção de produtos em destaque -->
-          <div class="produtos-coluna">
-
-            <!-- Produto 01 -->
-            <div class="card-produto">
-              <div class=""></div>
-              <img class="img-produto" src="./src/assets/img.jpg" />
-              <p class="nome-produto">
-                Notebook Lenovo Ideapad 3i I3-1115G4 4GB 256GB SSD W11 15.6" Prata
-              </p>
-              <div class="valor-produto">
-                <h3>R$</h3>
-                <h2>1861</h2>
-                <h4>,90</h4>
+  
+            <!-- Seção de produtos em destaque -->
+            <div class="produtos-coluna">
+  
+              <!-- Produto 01 -->
+              <div class="card-produto">
+                <div class=""></div>
+                <img class="img-produto" src="./src/assets/img.jpg" />
+                <p class="nome-produto">
+                  Notebook Lenovo Ideapad 3i I3-1115G4 4GB 256GB SSD W11 15.6" Prata
+                </p>
+                <div class="valor-produto">
+                  <h3>R$</h3>
+                  <h2>1861</h2>
+                  <h4>,90</h4>
+                </div>
+                <a href="./comparacaodepreco.html"
+                  ><button>
+                    Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+                ></a>
+                <p class="vendedor">Vendido por <strong>Americanas</strong></p>
               </div>
-              <a href="./comparacaodepreco.html"
-                ><button>
-                  Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
-              ></a>
-              <p class="vendedor">Vendido por <strong>Americanas</strong></p>
-            </div>
-
-            <!-- Produto 02 -->
-            <div class="card-produto">
-              <img class="img-produto" src="./src/assets/notebook-acer.jpg" />
-              <p class="nome-produto">
-                Notebook Gamer Acer Nitro 5 Intel Core I7-11800H, 16GB RAM, NVIDIA
-                RTX3050, SSD 512GB, 15.6" LED FHD IPS, Linux, Preto
-              </p>    
-              <div class="valor-produto">
-                <h3>R$</h3>
-                <h2>2561</h2>
-                <h4>,90</h4>
+  
+              <!-- Produto 02 -->
+              <div class="card-produto">
+                <img class="img-produto" src="./src/assets/notebook-acer.jpg" />
+                <p class="nome-produto">
+                  Notebook Gamer Acer Nitro 5 Intel Core I7-11800H, 16GB RAM, NVIDIA
+                  RTX3050, SSD 512GB, 15.6" LED FHD IPS, Linux, Preto
+                </p>    
+                <div class="valor-produto">
+                  <h3>R$</h3>
+                  <h2>2561</h2>
+                  <h4>,90</h4>
+                </div>
+                <a href="./comparacaodepreco.html"
+                  ><button>
+                    Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+                ></a>
+                <p class="vendedor">Vendido por <strong>KaBuM!</strong></p>
               </div>
-              <a href="./comparacaodepreco.html"
-                ><button>
-                  Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
-              ></a>
-              <p class="vendedor">Vendido por <strong>KaBuM!</strong></p>
-            </div>
-
-            <!-- Produto 03 -->
-            <div class="card-produto">
-              <img class="img-produto" src="./src/assets/iphone15.png" />
-              <p class="nome-produto">
-                Apple iPhone 15 Pro Max (256 GB) — Titânio preto
-                <br><br>
-              </p>
-              <div class="valor-produto">
-                <h3>R$</h3>
-                <h2>9899</h2>
-                <h4>,10</h4>
+  
+              <!-- Produto 03 -->
+              <div class="card-produto">
+                <img class="img-produto" src="./src/assets/iphone15.png" />
+                <p class="nome-produto">
+                  Apple iPhone 15 Pro Max (256 GB) — Titânio preto
+                  <br><br>
+                </p>
+                <div class="valor-produto">
+                  <h3>R$</h3>
+                  <h2>9899</h2>
+                  <h4>,10</h4>
+                </div>
+                <a href="./comparacaodepreco.html"
+                  ><button>
+                    Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+                ></a>
+                <p class="vendedor">Vendido por <strong>Amazon</strong></p>
               </div>
-              <a href="./comparacaodepreco.html"
-                ><button>
-                  Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
-              ></a>
-              <p class="vendedor">Vendido por <strong>Amazon</strong></p>
-            </div>
-
-            <!-- Produto 04 -->
-            <div class="card-produto">
-              <img class="img-produto" src="./src/assets/iphone13.jpg" />
-              <p class="nome-produto">
-                Apple iPhone 13 128GB Estelar Tela 6,1” 12MP
-                <br><br>
-              </p>
-              <div class="valor-produto">
-                <h3>R$</h3>
-                <h2>3999</h2>
-                <h4>,00</h4>
+  
+              <!-- Produto 04 -->
+              <div class="card-produto">
+                <img class="img-produto" src="./src/assets/iphone13.jpg" />
+                <p class="nome-produto">
+                  Apple iPhone 13 128GB Estelar Tela 6,1” 12MP
+                  <br><br>
+                </p>
+                <div class="valor-produto">
+                  <h3>R$</h3>
+                  <h2>3999</h2>
+                  <h4>,00</h4>
+                </div>
+                <a href="./comparacaodepreco.html"
+                  ><button>
+                    Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+                ></a>
+                <p class="vendedor">Vendido por <strong>Magazine Luiza</strong></p>
               </div>
-              <a href="./comparacaodepreco.html"
-                ><button>
-                  Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
-              ></a>
-              <p class="vendedor">Vendido por <strong>Magazine Luiza</strong></p>
-            </div>
-
-            <!-- Produto 05 -->
-            <div class="card-produto">
-              <img class="img-produto" src="./src/assets/Geladeira.jpg" />
-              <p class="nome-produto">
-                Geladeira Samsung Evolution RT46 com PowerVolt Inverter Duplex 460L Bivolt - Inox Look
-                <br>
-              </p>
-              <div class="valor-produto">
-                <h3>R$</h3>
-                <h2>4179</h2>
-                <h4>,05</h4>
+  
+              <!-- Produto 05 -->
+              <div class="card-produto">
+                <img class="img-produto" src="./src/assets/Geladeira.jpg" />
+                <p class="nome-produto">
+                  Geladeira Samsung Evolution RT46 com PowerVolt Inverter Duplex 460L Bivolt - Inox Look
+                  <br>
+                </p>
+                <div class="valor-produto">
+                  <h3>R$</h3>
+                  <h2>4179</h2>
+                  <h4>,05</h4>
+                </div>
+                <a href="./comparacaodepreco.html"
+                  ><button>
+                    Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
+                ></a>
+                <p class="vendedor">Vendido por <strong>Casas Bahia</strong></p>
               </div>
-              <a href="./comparacaodepreco.html"
-                ><button>
-                  Ver Promoção<i class="fa-solid fa-chevron-right"></i></button
-              ></a>
-              <p class="vendedor">Vendido por <strong>Casas Bahia</strong></p>
             </div>
           </div>
-        </div>
-      </div>  
-    </div>
+        </div>  
+      </div>
     </body>
 </html>
 
