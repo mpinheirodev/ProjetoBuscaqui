@@ -276,11 +276,12 @@ body {
 .preco {
     font-size: 30px;
     margin-top: 20px;
+    display: flex;
 }
 
 .preco_menor {
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .parcela {
     font-size: 16px;

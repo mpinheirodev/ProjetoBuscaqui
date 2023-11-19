@@ -60,11 +60,11 @@
 
   <!-- Histórico Navegação -->
   <div class="historico_navegacao">
-    <h5>Home</h5>
+    <a href="index.html"><h5>Home</h5></a>
     <i class="fa-solid fa-chevron-right seta_navegacao"></i>
-    <h5>Celulares e Smartphones</h5>
+    <a href="buscaproduto.html"><h5>Eletrodoméstico</h5></a>
     <i class="fa-solid fa-chevron-right seta_navegacao"></i>
-    <h5 class="diretorio_atual">IPhone</h5>
+    <h5 class="diretorio_atual">Geladeira</h5>
   </div>
   <br>
 
@@ -84,30 +84,56 @@
   <!-- Área de imagens e informação de valores do produto -->
   <div class="image-gallery">
     <div class="main-image-container">
-      <!-- Imagem Principal do produto quando é clicada -->
-      <img class="imagem_principal" src="https://encurtador.com.br/svKX3" alt="Imagem Principal">
-      <!-- Loja verificada -->
-      <div class="loja_verificada">Loja Verificada</div>
-      <!-- Preço do produto -->
-      <div class="menor_preco">menor preço por Mercado Livre</div>
-      <div class="preco"><h1>R$ 3630</h1></div>
-      <div class="preco_menor"> <h5>,00</h5></div>
-      <div class="parcela">ou 10x de R$ 363,00 com juros</div>
-      <!-- Botão de promoção -->
-      <button class="promocao_botao">
-      Pegar Promoção <i class="fas fa-arrow-up-right-from-square"></i>
-</button>
-      <!-- Botão de Salvar Oferta -->
-      <button class="salvar-btn">
+      <div class="informacao_1">
+        <!-- Imagem Principal do produto quando é clicada -->
+        <img class="imagem_principal" src="https://encurtador.com.br/svKX3" alt="Imagem Principal">
+        <!-- Pequenas imagens abaixo da imagem principal para ser clicáveis -->
+        <div class="thumbnails">
+          <img class="thumbnail" src="https://encurtador.com.br/svKX3" alt="Miniatura 1">
+          <img class="thumbnail" src="https://encurtador.com.br/blJX4" alt="Miniatura 2">
+          <img class="thumbnail" src="https://encurtador.com.br/cwHOZ" alt="Miniatura 3">
+          <img class="thumbnail" src="https://encurtador.com.br/wCER9" alt="Miniatura 4">
+        </div>
+      </div>
+      <div class="informacao_2">
+        <!-- Loja verificada -->
+        <div class="loja_verificada">Loja Verificada</div>
+        <!-- Preço do produto -->
+        <div class="menor_preco">menor preço por Mercado Livre</div>
+        <div class="preco"><h1>R$ 3630</h1><div class="preco_menor"><h5>,00</h5></div></div>
+        
+        <div class="parcela">ou 10x de R$ 363,00 com juros</div>
+        <!-- Botão de promoção -->
+        <button class="promocao_botao">
+        Pegar Promoção <i class="fas fa-arrow-up-right-from-square"></i>
+        </button>
+        <!-- Botão de Salvar Oferta -->
+        <button class="salvar-btn">
         <span class="coracao">&#9825;</span>Salvar Oferta
-      </button>
-    </div>
-    <!-- Pequenas imagens abaixo da imagem principal para ser clicáveis -->
-    <div class="thumbnails">
-      <img class="thumbnail" src="https://encurtador.com.br/svKX3" alt="Miniatura 1">
-      <img class="thumbnail" src="https://encurtador.com.br/blJX4" alt="Miniatura 2">
-      <img class="thumbnail" src="https://encurtador.com.br/cwHOZ" alt="Miniatura 3">
-      <img class="thumbnail" src="https://encurtador.com.br/wCER9" alt="Miniatura 4">
+        </button>
+      </div>
+      <div class="informacao_3">
+        <div class="aquitempreco">
+          <div class="texto_tempreco"><img class="fogo_icon" src="./src/assets/fogo.svg" /><div class="texto_aqui">aqui</div>tem preço</div>
+          <div class="historico_preco"><img src="./src/assets/historic_price.svg" /></div>
+          <p>Com base nos últimos 30 dias, o valor está próximo da média de <b>R$ 4.049,00</b></p>
+          <div class="div_historico">
+            <button>Ver Histórico</button>
+          </div>
+        </div>
+        <div class="quereconomizar">
+          <div class="economizar_cima">
+            <div class="economizar_1">
+              <i class="fa-solid fa-bell sino"></i>Quer economizar?
+            </div>
+            <div class="economizar_2">
+              <input type="checkbox">
+            </div>
+          </div>
+          <div class="descricao_economizar">
+            <p>Te avisamos quando o preço melhorar!</p>
+          </div>
+      </div>
     </div>
   </div>
 <!-- Abas abaixo das imagens -->
