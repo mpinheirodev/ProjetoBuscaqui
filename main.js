@@ -49,7 +49,10 @@ const DropdownContent = document.querySelector(".lista-categorias");
 document.addEventListener('mousedown', (e) => {
   if (Dropdown.contains(e.target)) {
     DropdownContent.classList.toggle("mostrar");
-  } else {
+  } else if (DropdownContent.contains(e.target)) {
+
+  }
+  else {
     DropdownContent.classList.remove("mostrar");
   }
 })

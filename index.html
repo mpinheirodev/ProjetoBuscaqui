@@ -41,7 +41,7 @@
           <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div id="dropdown" class="lista-categorias">
-          <a href="buscaproduto.html">Eletrodoméstico</a>
+          <a href="./buscaproduto.html">Eletrodoméstico</a>
           <a href="#">Eletrônicos</a>
           <a href="#">Celulares e telefones</a>
           <a href="#">Informática e escritório</a>
@@ -49,7 +49,7 @@
           <a href="#">Auto peças e acessórios</a>
           <a href="#">Casa e jardim</a>
           <a href="#">Esporte e lazer</a>
-          <a href="#">Utiadade doméstica</a>
+          <a href="#">Utliadade doméstica</a>
           <a href="#">Todas as categorias</a>
         </div>
       </div>
@@ -82,86 +82,24 @@
         </div>
       </div>
 
+      <!-- Notificação -->
+      <div class="notificacao">
+        <div class="dropdown-notificacao">
+          <h3>Notificações</h3>
+          <div class="lista-notificacao">
+            <a href="#">Você tem 1 novo cupom</a>
+            <a href="#">Você tem 1 novo cashback</a>
+            <a href="#">Você tem 1 novo comentário</a>
+          </div>
+        </div>
+      </div>
+
       <!-- Grupo de usuário -->
       <div class="usuario">
         <i id="notificacao" class="fa-regular fa-bell">
           <p class="dot">&#x25CF;</p>
         </i>
         <i class="fa-regular fa-circle-user" id="open-modal"></i>
-      </div>
-
-      <div id="fade" class="hide"></div>
-      <div id="modal" class="hide">
-        <div class="modal-header"></div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="boxtext">
-              <img
-                src="src/assets/BUSCAQUI_LOGO.png"
-                alt="logo"
-                width="150px"
-              />
-              <form>
-                <div class="input">
-                  <input
-                    required
-                    type="text"
-                    usuario=""
-                    id="usuario"
-                    class="input"
-                  />
-                  <label for="usuario">Usuario</label>
-                </div>
-                <div class="input">
-                  <input
-                    required
-                    type="password"
-                    senha=""
-                    id="Senha"
-                    class="input"
-                  />
-                  <label for="senha">Senha</label>
-                </div>
-                <div class="box">
-                  <input type="checkbox" id="lembrar" name="Lembrar" /><label
-                    for="lembrar"
-                    >Lembre-se de mim!</label
-                  >
-                  <a href="https://www.google.com" target="_blank"
-                    >Esqueceu a senha?</a
-                  >
-                </div>
-
-                <div class="conta">
-                  <p>Não tem uma conta?</p>
-                  <a href="cadastro.html" target="_blank">Cadastre-se</a>
-                </div>
-
-                <br />
-                <input
-                  type="submit"
-                  class="button"
-                  value="Continue com o Email"
-                />
-              </form>
-              <p>Ou</p>
-              <div class="icones">
-                <a href="https://www.google.com" target="_blank">
-                  <img src="src/assets/google.png" alt="Google" />
-                </a>
-
-                <a href="https://www.facebook.com" target="_blank">
-                  <img src="src/assets/facebook.png" alt="Facebook" />
-                </a>
-
-                <a href="https://www.apple.com" target="_blank">
-                  <img src="src/assets/Apple.png" alt="Apple" />
-                </a>
-              </div>
-            </div>
-            <div class="boximg" id="close-modal"></div>
-          </div>
-        </div>
       </div>
     </nav>
 
@@ -406,6 +344,78 @@
         </p>
       </div>
     </footer>
+
+    <!-- Modal Login -->
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header"></div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="boxtext">
+            <img src="src/assets/BUSCAQUI_LOGO.png" alt="logo" width="150px" />
+            <form>
+              <div class="input">
+                <input
+                  required
+                  type="text"
+                  usuario=""
+                  id="usuario"
+                  class="input"
+                />
+                <label for="usuario">Usuario</label>
+              </div>
+              <div class="input">
+                <input
+                  required
+                  type="password"
+                  senha=""
+                  id="Senha"
+                  class="input"
+                />
+                <label for="senha">Senha</label>
+              </div>
+              <div class="box">
+                <input type="checkbox" id="lembrar" name="Lembrar" /><label
+                  for="lembrar"
+                  >Lembre-se de mim!</label
+                >
+                <a href="https://www.google.com" target="_blank"
+                  >Esqueceu a senha?</a
+                >
+              </div>
+
+              <div class="conta">
+                <p>Não tem uma conta?</p>
+                <a href="cadastro.html" target="_blank">Cadastre-se</a>
+              </div>
+
+              <br />
+              <input
+                type="submit"
+                class="button"
+                value="Continue com o Email"
+              />
+            </form>
+            <p>Ou</p>
+            <div class="icones">
+              <a href="https://www.google.com" target="_blank">
+                <img src="src/assets/google.png" alt="Google" />
+              </a>
+
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="src/assets/facebook.png" alt="Facebook" />
+              </a>
+
+              <a href="https://www.apple.com" target="_blank">
+                <img src="src/assets/Apple.png" alt="Apple" />
+              </a>
+            </div>
+          </div>
+          <div class="boximg" id="close-modal"></div>
+        </div>
+      </div>
+    </div>
 
     <script src="./main.js"></script>
   </body>
