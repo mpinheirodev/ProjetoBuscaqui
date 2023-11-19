@@ -143,6 +143,8 @@ a {
 
 #notificacao {
   display: flex;
+  cursor: pointer;
+  position: relative;
 }
 
 .dot {
@@ -150,16 +152,11 @@ a {
   position: relative;
   top: -.5rem;
   left: -.8rem;
-  z-index: 1;
 }
 
 .usuario i {
-  padding: 0 .6rem;
+  padding: 0 .2rem;
   font-size: 1.6rem;
-}
-
-.usuario a {
-  color: var(--color-grafite);
 }
 
 .busca {
@@ -486,6 +483,11 @@ footer {
 }
 
 /* ------- Modal Login -------*/
+
+#open-modal {
+  cursor: pointer;
+}
+
 #fade {
   position: fixed;
   top: 0;

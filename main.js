@@ -46,11 +46,6 @@ function showSlides(n) {
 const Dropdown = document.querySelector(".categorias");
 const DropdownContent = document.querySelector(".lista-categorias");
 
-// Dropdown.addEventListener("click", () => {
-//   DropdownContent.classList.toggle("mostrar");
-// });
-
-
 document.addEventListener('mousedown', (e) => {
   if (Dropdown.contains(e.target)) {
     DropdownContent.classList.toggle("mostrar");
