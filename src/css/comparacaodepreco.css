@@ -539,28 +539,9 @@ input:checked[type="checkbox"]:before {
   }
   
   .tab-content.active {
-    display: block;
-    width: 1110px;
-  }
-  .cifrao {
-    width: 20px;
-    height: 20px;
-    color: white;
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: 5px; 
-  }
-  .grafico {
-    font-size: 18px;
-    color: white; 
-    border: 2px solid black;
-    border-radius: 4px;
-    margin-right: 5px; 
+    display:block;
+    position: relative;
+
   }
 
   /* Comparação produto */
@@ -659,7 +640,6 @@ input:checked[type="checkbox"]:before {
     text-align: left;
     font-size: 20px;
     font-weight:500;
-    margin-bottom: 10px;
 }
 
 .informacoes_principais {
@@ -669,7 +649,7 @@ input:checked[type="checkbox"]:before {
 }
 
   .container_tabela {
-    width: 400px;
+    width: 100%;
     display: flex 1;
     border: 1px solid #e2e2e2;
     border-radius: 5px;
