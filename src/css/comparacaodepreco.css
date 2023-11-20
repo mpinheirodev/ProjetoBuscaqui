@@ -540,6 +540,7 @@ input:checked[type="checkbox"]:before {
   
   .tab-content.active {
     display: block;
+    width: 1110px;
   }
   .cifrao {
     width: 20px;
@@ -651,3 +652,51 @@ input:checked[type="checkbox"]:before {
     position: relative;
     left: 10rem;
   }
+
+  /* Descrição */
+
+  .ficha_tecnica {
+    text-align: left;
+    font-size: 20px;
+    font-weight:500;
+    margin-bottom: 10px;
+}
+
+.informacoes_principais {
+    text-align: left;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+  .container_tabela {
+    width: 400px;
+    display: flex 1;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.linha_tabela {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.linha_tabela:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.linha_tabela:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.dado_tabela {
+    flex: 1;
+    text-align: left;
+}
+
+.dado_tabela:first-child {
+    flex: 2;
+}

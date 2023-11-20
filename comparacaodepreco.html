@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-u1q23m50eMqUCGc9saMNE8uvmznAdOtkP5IeRvbWg8gIlxU5w0p0ma8I3oJmTuLQ" crossorigin="anonymous">
+  <script src="./src/js/ScriptComparacao.js"></script>
 
   <title>Buscaqui 🔥</title>
 </head>
@@ -137,70 +138,80 @@
   </div>
 <!-- Abas abaixo das imagens -->
 <div class="tabs">
-  <button class="tab-button active" onclick="showTab('precos')">
-    <div class="cifrao">$
-    </div> Preços
-  </button>
-  <button class="tab-button active" onclick="showTab('historico')">
-    <div class="tab-title">
-      <i class="fas fa-chart-bar"></i>
-      Histórico
-    </div>
-  </button>
-  <div class="tab-content" id="historico">
-  </div>
+  <button class="tab-button" onclick="showTab('precos')" > <i class="fas fa-dollar-sign"></i> Preços</button>
+  <button class="tab-button" onclick="showTab('historico')"> <i class="fas fa-chart-bar"></i> Histórico</button>
   <button class="tab-button" onclick="showTab('descricao')"> <i class="fas fa-list"></i> Descrição</button>
   <button class="tab-button" onclick="showTab('avaliacoes')"> <i class="far fa-star"></i> Avaliações</button>
 </div>
 
 <!-- Conteúdos correspondentes para cada aba -->
 <div id="precos" class="tab-content active">
-  
+  <div class="compare">
+    <h3>Compare os preços</h3>
+    <div class="comparacao_preco">
+      <h4>Menor Preço</h4>
+    </div>
+    <div class="produto_comparacao">
+      <!-- Produto 01 -->
+    <div class="long-card-produto">
+      <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
+      <div class="info">
+        <div class="nome">
+          <h3>
+            Apple iPhone 13 128GB Verde 5G Tela 6,1"
+          </h3>
+        </div>
+        <div class="valores">
+          <h3>R$ 3.630,00</h3>
+          <p> à vista</p>
+        </div>
+        <p>ou 10x de R$363,00 sem juros</p>
+      </div>
+      <div class="logoloja">
+        <img src="./src/assets/mercadolivre.jpeg">
+      </div>
+    
+      <button class="irloja">Ir para a loja</button>
+    </div>
+    </div>
+  </div>
 </div>
 
 <div id="historico" class="tab-content">
-  <!-- Conteúdo de Histórico aqui... -->
 </div>
 
-<div id="descricao" class="tab-content">
-  <!-- Conteúdo de Descrição aqui... -->
+<div id="descricao" class="tab-content active">
+  <br>
+  <div class="ficha_tecnica">Ficha técnica</div>
+  <br>
+  <div class="informacoes_principais">Informações principais</div>
+  <div class="container_tabela">
+    <div class="linha_tabela">
+        <div class="dado_tabela">Marca</div>
+        <div class="dado_tabela">Apple</div>
+    </div>
+    <div class="linha_tabela">
+        <div class="dado_tabela">Linha</div>
+        <div class="dado_tabela">iPhone</div>
+    </div>
+    <div class="linha_tabela">
+        <div class="dado_tabela">Série</div>
+        <div class="dado_tabela">13</div>
+    </div>
+    <div class="linha_tabela">
+        <div class="dado_tabela">Tipo de Aparelho</div>
+        <div class="dado_tabela">Smartphone</div>
+    </div>
+    <div class="linha_tabela">
+        <div class="dado_tabela">Quantidade de Chip</div>
+        <div class="dado_tabela">1 Chip</div>
+    </div>
 </div>
+
 
 <div id="avaliacoes" class="tab-content">
-  <!-- Conteúdo de Avaliações aqui... -->
 </div>
 
-<div class="compare">
-  <h3>Compare os preços</h3>
-  <div class="comparacao_preco">
-    <h4>Menor Preço</h4>
-  </div>
-  <div class="produto_comparacao">
-    <!-- Produto 01 -->
-  <div class="long-card-produto">
-    <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
-    <div class="info">
-      <div class="nome">
-        <h3>
-          Apple iPhone 13 128GB Verde 5G Tela 6,1"
-        </h3>
-      </div>
-      <div class="valores">
-        <h3>R$ 3.630,00</h3>
-        <p> à vista</p>
-      </div>
-      <p>ou 10x de R$363,00 sem juros</p>
-    </div>
-    <div class="logoloja">
-      <img src="./src/assets/mercadolivre.jpeg">
-    </div>
-  
-    <button class="irloja">Ir para a loja</button>
-  </div>
-  </div>
-</div>
-
-<script src="./src/js/ScriptComparacao.js"></script>
 
 </body>
 </html>
