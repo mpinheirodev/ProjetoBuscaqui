@@ -573,7 +573,8 @@ input:checked[type="checkbox"]:before {
     gap: 1rem;
     width: 100%;
   }
-
+  
+    /* Produto 1 */
   .long-card-produto {
     display: flex;
     position: relative;
@@ -633,8 +634,86 @@ input:checked[type="checkbox"]:before {
     position: relative;
     left: 10rem;
   }
+    /* Produto 1 */
 
-  /* Descrição */
+
+    /* Produto 2 */
+    .long-card-produtoo {
+        display: flex;
+        position: relative;
+        padding: 2rem;
+        background-color: var(--color-bg-white);
+        gap: 2rem;
+        border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+        box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+        margin-top: -0.2rem;
+      }
+    
+      .long-card-produtoo img{
+        width: 120px;
+      }
+
+      .valoress {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+      }
+      
+      .long-card-produtoo p {
+        color: var(--color-gray);
+      }
+
+      .valoress p {
+        color:var(--color-grafite)
+      }
+
+      .logolojaa {
+        position: relative;
+        left: 10rem;
+      }
+    /* Produto 2 */
+
+
+    /* Produto 3 */
+    .long-card-produtooo {
+        display: flex;
+        width: 1295px;
+        left: 97px;
+        position:relative;
+        padding: 2rem;
+        background-color: var(--color-bg-white);
+        gap: 2rem;
+        border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+        box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.25);
+        margin-top: -0.2rem;
+      }
+    
+      .long-card-produtooo img{
+        width: 120px;
+      }
+
+      .valoresss {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+      }
+      
+      .long-card-produtooo p {
+        color: var(--color-gray);
+      }
+
+      .valoresss p {
+        color:var(--color-grafite)
+      }
+
+      .logolojaaa {
+        position: relative;
+        left: 10rem;
+      }
+    /* Produto 3 */
+
+
+    /* Descrição */
 
   .ficha_tecnica {
     text-align: left;

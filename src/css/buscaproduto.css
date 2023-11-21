@@ -33,7 +33,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 6rem;
-    /* border-bottom: .1rem solid #A7A5A5; */
     margin-bottom: 1rem;
 }
 
@@ -119,7 +118,7 @@ body {
 
 .historico_navegacao a{
     text-decoration: none;
-    color: var(--color-black);
+    color: var(--color-grafite);
 }
 
 .seta_navegacao {

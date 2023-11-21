@@ -194,6 +194,7 @@ a {
 
 .usuario{
   user-select: none;
+  padding-right: .8rem;
 }
 
 .dot {
@@ -435,30 +436,6 @@ a {
   margin-top: 10px;
 }
 
-/* ---------- NAVEGAÇÃO ---------- */
-
-.historico_navegacao {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 480;
-  line-height: normal;
-  font-style: normal;
-  justify-content: left;
-  padding-left: 98px;
-}
-
-.seta_navegacao {
-
-  font-size: .7rem;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-.diretorio_atual {
-  font-weight: 470;
-}
-
 
 /* ---------- SEÇÃO DE PRODUTOS ---------- */
 
@@ -467,7 +444,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100%;
+  width: 99%;
 }
 
 .long-card-produto {
@@ -571,14 +548,13 @@ footer {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
-  
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid var(--color-gray);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
@@ -600,7 +576,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .icones a {
@@ -650,14 +626,14 @@ div.input .input {
 
 div.input .input:focus,
 div.input .input:valid {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--color-red);
 }
 
 div.input .input:focus ~ label,
 div.input .input:valid ~ label {
   transform: translateY(-24px);
   font-size: 12px;
-  color: red;
+  color: var(--color-red);
 }
 
 .container {
@@ -670,14 +646,20 @@ div.input .input:valid ~ label {
 .box {
   padding-bottom: 10px;
   padding-left: 12px;
+  padding-right: 10px;
   font-size: 12.5px;
-  font-family: "Montserrat", sans-serif;
-  color: black;
+  color: var(--color-grafite);
+  display: flex;
+  justify-content: center;
 }
 
 .box label {
   margin-right: 20px;
   margin-left: 1px;
+}
+
+.box a {
+  border-bottom: .01rem solid var(--color-grafite);
 }
 
 .conta {
@@ -692,10 +674,11 @@ div.input .input:valid ~ label {
 .conta a {
   font-size: 12px;
   margin-top: 5px;
+  border-bottom: .01rem solid var(--color-grafite);
 }
 
 .conta a:hover {
-  color: red;
+  color: var(--color-red);
 }
 
 .boximg {
@@ -713,7 +696,7 @@ div.input .input:valid ~ label {
 .boxtext {
   width: 300px;
   height: 500px;
-  background-color: white;
+  background-color: var(--color-bg-white);
   border-radius: 2px;
   box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.1);
   display: flex;
@@ -723,9 +706,9 @@ div.input .input:valid ~ label {
 }
 
 .button {
-  background-color: red;
-  border: 1px solid red;
-  color: white;
+  background-color: var(--color-red);
+  border: 1px solid var(--color-red);
+  color: var(--color-white);
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;

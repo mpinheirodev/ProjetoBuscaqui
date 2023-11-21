@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/ant-design_fire-filled.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/47576b6131.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/css/cupons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cupons - Buscaqui 🔥</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo_nav">
+        <a href="./index.html"
+          ><img
+            src="./src/assets/BUSCAQUI_LOGO.png"
+            alt="Logo"
+            class="img_logo"
+        /></a>
+      </div>
+
+      <!-- Categorias -->
+      <div class="dropdown-categoria">
+        <div class="categorias" onclick="myFunction()">
+          <h3>Categorias</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="dropdown" class="lista-categorias">
+          <a href="./buscaproduto.html">Eletrodoméstico</a>
+          <a href="#">Eletrônicos</a>
+          <a href="#">Celulares e telefones</a>
+          <a href="#">Informática e escritório</a>
+          <a href="#">Games, jogos e brinquedos</a>
+          <a href="#">Auto peças e acessórios</a>
+          <a href="#">Casa e jardim</a>
+          <a href="#">Esporte e lazer</a>
+          <a href="#">Utliadade doméstica</a>
+          <a href="#">Todas as categorias</a>
+        </div>
+      </div>
+
+      <!-- Área de busca -->
+      <div class="busca">
+        <input type="text" placeholder="Busque por produtos" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- Grupo de links -->
+      <div class="links">
+        <div class="cupons">
+          <a href="#">
+            <i class="fa-solid fa-percent"></i>
+            <h4>Cupons</h4>
+          </a>
+        </div>
+        <div class="cashback">
+          <a href="#">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h4>Cashback</h4>
+          </a>
+        </div>
+      </div>
+
+      <!-- Notificação -->
+      <div class="notificacao">
+        <div class="dropdown-notificacao">
+          <h3>Notificações</h3>
+          <div class="lista-notificacao">
+            <a href="#"
+              ><i>&#x25CF;</i>
+              <p><b>5</b> novos cupons</p></a
+            >
+            <a href="#"
+              ><i>&#x25CF;</i>
+              <p><b>3</b> novos cashbacks</p></a
+            >
+            <a href="#"
+              ><i>&#x25CF;</i>
+              <p><b>20</b> novos comentários</p></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Grupo de usuário -->
+      <div class="usuario">
+        <i id="notificacao" class="fa-regular fa-bell">
+          <p class="dot">&#x25CF;</p>
+        </i>
+        <i class="fa-regular fa-circle-user" id="open-modal"></i>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="navegacao">
+        <a href="./index.html">Início</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="./cupons.html">Cupons</a>
+      </div>
+
+      <h2>Cupons 🔥</h2>
+      <div class="lista-cupons">
+
+        <!-- Cupom 1 -->
+        <div class="card-cupom">
+          <h4>70% OFF</h4>
+          <div class="descricao-cupom">
+            <div class="texto-descricao">
+              <h5>Amazon</h5>
+            <p>
+              Aproveite as melhores ofertas do Esquenta Black Friday Amazon -
+              Ofertas com até 70% de desconto
+            </p>
+            </div>
+            <div class="imagem-loja">
+              <img src="./src/assets/amazon.png" alt="Amazon" />
+            </div>
+          </div>
+          <div class="expiracao">
+            <i class="fa-solid fa-clock"></i><p>Expira em 2 dias</p>
+          </div>
+          <div class="resgate">
+            <a href="https://www.amazon.com.br/"><button>Aproveitar oferta <i class="fa-solid fa-chevron-right"></i></button></a>
+          </div>
+        </div>
+
+        <!-- Cupom 2 -->
+        <div class="card-cupom">
+          <h4>30% OFF</h4>
+          <div class="descricao-cupom">
+            <div class="texto-descricao">
+              <h5>KaBuM!</h5>
+            <p>
+              Aproveite as melhores ofertas da semana Black Friday KaBuM!
+              Ofertas com até 30% de desconto
+            </p>
+            </div>
+            <div class="imagem-loja">
+              <img src="./src/assets/kabum.jpeg" alt="Amazon" />
+            </div>
+          </div>
+          <div class="expiracao">
+            <i class="fa-solid fa-clock"></i><p>Expira em 3 dias</p>
+          </div>
+          <div class="resgate">
+            <a href="https://www.kabum.com.br/"><button>Aproveitar oferta <i class="fa-solid fa-chevron-right"></i></button></a>
+          </div>
+        </div>
+
+        <!-- Cupom 3 -->
+        <div class="card-cupom">
+          <h4>50% OFF</h4>
+          <div class="descricao-cupom">
+            <div class="texto-descricao">
+              <h5>Magazine Luiza</h5>
+            <p>
+              Aproveite as melhores ofertas da semana Black Friday MagaLu
+              Ofertas com até 50% de desconto
+            </p>
+            </div>
+            <div class="imagem-loja">
+              <img src="./src/assets/magalu2.png" alt="Amazon" />
+            </div>
+          </div>
+          <div class="expiracao">
+            <i class="fa-solid fa-clock"></i><p>Expira em 1 dia</p>
+          </div>
+          <div class="resgate">
+            <a href="https://www.magazineluiza.com.br/"><button>Aproveitar oferta <i class="fa-solid fa-chevron-right"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
