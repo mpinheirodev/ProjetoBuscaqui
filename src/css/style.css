@@ -508,7 +508,7 @@ footer {
   color: var(--color-grafite);
 }
 
-/* ------- Modal Login -------*/
+/* ------- Modal Login (Modal)-------*/
 
 #open-modal {
   cursor: pointer;
@@ -569,7 +569,7 @@ footer {
   top: 0;
 }
 
-/* --- icones Login --- */
+/* --- icones Login (Modal)--- */
 
 .icones {
   display: flex;
@@ -589,7 +589,7 @@ footer {
   height: 30px;
 }
 
-/* --- Input Login/ Form --- */
+/* --- Input Login/ Form (Modal)--- */
 
 form {
   width: 100%;
@@ -725,3 +725,4 @@ div.input .input:valid ~ label {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/*-fim do modal*/

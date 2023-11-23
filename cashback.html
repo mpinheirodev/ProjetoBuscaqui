@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/47576b6131.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/js/cashback.js"></script>
     <link rel="stylesheet" href="./src/css/cashback.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,6 +23,7 @@
     <title>Cashback - Buscaqui 🔥</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <!-- Logo -->
       <div class="logo_nav">
@@ -105,7 +107,7 @@
       </div>
     </nav>
 
-    <section class="container">
+    <section class="containercashback">
       <div class="navegacao">
         <a href="./index.html">Início</a>
         <i class="fa-solid fa-chevron-right"></i>
@@ -177,5 +179,91 @@
           </div>      
     </section>
     
+       <!-- Rodapé -->
+       <footer class="rodape">
+        <img src="./src/assets/BUSCAQUI_LOGO.png" alt="" />
+        <div class="sobre">
+          <h3>Sobre</h3>
+          <a href="./sobre.html">Quem somos</a>
+        </div>
+        <div class="trabalho">
+          <h3>Disciplina</h3>
+          <p>
+            Trabalho desenvolvido para as <br />
+            disciplinas de UI/UX Design <br />
+            e Web Coding
+          </p>
+        </div>
+      </footer>
+  
+      <!-- Modal Login -->
+  
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modal-header"></div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="boxtext">
+              <img src="./src/assets/BUSCAQUI_LOGO.png" alt="logo" width="150px" />
+              <form>
+                <div class="input">
+                  <input
+                    required
+                    type="text"
+                    usuario=""
+                    id="usuario"
+                    class="input"
+                  />
+                  <label for="usuario">Usuario</label>
+                </div>
+                <div class="input">
+                  <input
+                    required
+                    type="password"
+                    senha=""
+                    id="Senha"
+                    class="input"
+                  />
+                  <label for="senha">Senha</label>
+                </div>
+                <div class="box">
+                  <input type="checkbox" id="lembrar" name="Lembrar" />
+                  <label for="lembrar">Lembre-se de mim!</label>
+                  <a href="https://www.google.com" target="_blank">Esqueceu a senha?</a>
+                </div>
+  
+                <div class="conta">
+                  <p>Não tem uma conta?</p>
+                  <a href="./cadastro.html">Cadastre-se</a>
+                </div>
+  
+                <br />
+                <input
+                  type="submit"
+                  class="button"
+                  value="Continue com o Email"
+                />
+              </form>
+              <p>Ou</p>
+              <div class="icones">
+                <a href="https://www.google.com" target="_blank">
+                  <img src="./src/assets/google.png" alt="Google" />
+                </a>
+  
+                <a href="https://www.facebook.com" target="_blank">
+                  <img src="./src/assets/facebook.png" alt="Facebook" />
+                </a>
+  
+                <a href="https://www.apple.com" target="_blank">
+                  <img src="./src/assets/Apple.png" alt="Apple" />
+                </a>
+              </div>
+            </div>
+            <div class="boximg" id="close-modal"></div>
+            <script src="./src/js/main.js"></script>
+          </div>
+        </div>
+      </div> 
+  
   </body>
 </html>
