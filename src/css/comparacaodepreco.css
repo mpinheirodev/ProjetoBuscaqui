@@ -371,7 +371,7 @@ body {
   height: 316px;
   border-radius: 16px;
   border: 3px solid #E5E3E1;
-  background: #F5F5F7;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1384,5 +1384,5 @@ div.input .input:valid ~ label {
   font-weight: 400;
 }
 .texto_grosso {
-  font-weight:700; 
+  font-weight: 500;
 }
