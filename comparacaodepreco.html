@@ -163,13 +163,13 @@
                 <i class="fa-solid fa-bell sino"></i>Quer economizar?
               </div>
               <div class="economizar_2">
-                <input type="checkbox">
+                <input type="checkbox" class="custom-checkbox">
               </div>
             </div>
             <div class="descricao_economizar">
               <p>Te avisamos quando o preço melhorar!</p>
             </div>
-        </div>
+          </div>
       </div>
     </div>
   </div>
@@ -424,6 +424,74 @@
     </p>
   </div>
 </footer>
+
+<!-- Modal Login -->
+<div id="fade" class="hide"></div>
+<div id="modal" class="hide">
+  <div class="modal-header"></div>
+  <div class="modal-body">
+    <div class="containermodal">
+      <div class="boxtext">
+        <div class="logobuscaquilogin">
+          <img src="./src/assets/BUSCAQUI_LOGO.png" alt="logo" width="150px" />
+        </div>
+        <form>
+          <div class="input">
+            <input
+              required
+              type="text"
+              usuario=""
+              id="usuario"
+              class="input"
+            />
+            <label for="usuario">Usuario</label>
+          </div>
+          <div class="input">
+            <input
+              required
+              type="password"
+              senha=""
+              id="Senha"
+              class="input"
+            />
+            <label for="senha">Senha</label>
+          </div>
+          <div class="box">
+            <div class="lembredemim">
+              <input type="checkbox" id="lembrar" name="Lembrar" class="styled-checkbox" />
+              <label for="lembrar">Lembre de mim</label>
+            </div>
+            <div class="esquecisenha">
+              <a href="index.html">Esqueceu a senha?</a>
+            </div>
+          </div>
+          <input
+            type="submit"
+            class="button"
+            value="Continue com e-mail"
+          />
+        </form>
+        <p class="texto_ou">Ou</p>
+        <div class="icones">
+          <a href="https://www.google.com" target="_blank">
+            <img src="./src/assets/google.png" alt="Google" />
+          </a>
+
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./src/assets/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://www.apple.com" target="_blank">
+            <img src="./src/assets/Apple.png" alt="Apple" />
+          </a>
+        </div>
+      </div>
+      <div class="boximg" id="close-modal"></div>
+    </div>
+  </div>
+</div>
+
 <script src="./src/js/ScriptComparacao.js"></script>  
+
 </body>
 </html>

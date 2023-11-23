@@ -65,7 +65,6 @@ document.addEventListener('mousedown', (e) => {
   }
 })
 
-
 // Modal
 const openModalButton = document.querySelector("#open-modal");
 const closeModalButton = document.querySelector("#close-modal");

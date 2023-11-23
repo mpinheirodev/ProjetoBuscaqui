@@ -637,7 +637,7 @@ div.input .input:valid ~ label {
   color: red;
 }
 
-.container {
+.containermodal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -670,25 +670,27 @@ div.input .input:valid ~ label {
   padding-left: .3rem;
 }
 
-.lembredemim input[type=checkbox] {
+#modal input[type=checkbox] {
   position: relative;
   top: 0;
   left: 0;
   cursor: pointer;
 }
-.lembredemim input[type=checkbox]:before {
+
+#modal input[type=checkbox]:before {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 03px;
-  background-color: var(--color-bg);
+  border-radius: 3px;
+  background-color: var(--color-bg); /* Cor de fundo padrão */
   border: 1.5px solid #000;
   width: 12px;
   height: 12px;
   top: 0;
   left: 0;
 }
-.lembredemim input[type=checkbox]:checked:before {
+
+#modal input[type=checkbox]:checked:before {
   content: "";
   display: block;
   position: absolute;
@@ -696,10 +698,10 @@ div.input .input:valid ~ label {
   height: 14px;
   top: 0;
   left: 0;
-  background-color:var(--color-red);
+  background-color: var(--color-red); /* Cor quando marcado (vermelho) */
   border: 0px;
 }
-.lembredemim input[type=checkbox]:checked:after {
+#modal input[type=checkbox]:checked:after {
   content: "";
   display: block;
   width: 3px;
@@ -711,7 +713,7 @@ div.input .input:valid ~ label {
   transform: rotate(45deg);
   position: absolute;
   top: 1.5px;
-  left: 4.5px;
+  left: 4.5px
 }
 
 .boximg {
