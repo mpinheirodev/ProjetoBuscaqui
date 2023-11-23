@@ -817,6 +817,7 @@ input:checked[type="checkbox"]:before {
 
 .geral_flex {
   display: flex;
+  padding-bottom: 1rem;
 }
 
 .informacoes_principais {
@@ -850,7 +851,6 @@ input:checked[type="checkbox"]:before {
 }
 
 .descri0 {
-  padding: 1rem 0 0 0;
   font-size: 20px;
   font-weight: 500;
 }
@@ -862,7 +862,7 @@ input:checked[type="checkbox"]:before {
 }
 
 .descri2 h3 {
-  padding: 1.8rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 20px;
   font-weight: 500;
 }
@@ -974,7 +974,7 @@ input:checked[type="checkbox"]:before {
 .geral_flex2{
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 68%;
 }
 
 .geral_flex2 h6{
@@ -986,7 +986,7 @@ input:checked[type="checkbox"]:before {
 }
 
 .linha-horizontal {
-  width: 600px;
+  width: 900px;
   height: 1px;
   background-color: #B2B2B2;
   border: .001rem solid #B2B2B2;
@@ -995,30 +995,58 @@ input:checked[type="checkbox"]:before {
 .geral_flex3{
   display: flex;
   align-items: center;
-  width: 50%;
-  padding-left: 2rem;
+  width: 100%;
+  padding-bottom: 1rem;
 }
 
 .geral_flex3 h6{
   color: #B2B2B2;
   font-size: 14px;
   font-weight: 500;
-  padding-left: 2rem;
+  padding-left: 4.4rem;
   padding-bottom: .4rem;
 }
 
 .grafico_preco {
   position: absolute;
-  width: 48.1%;
+  width: 68.3%;
   padding-left: 3.1rem;
 }
 
 .grafico_icon {
   position: absolute;
-  padding-top: .9rem;
-  padding-left: 40rem;
+  padding-top: 2rem;
+  padding-left: 57.4rem;
   cursor: pointer;
 }
+
+.grafico_valor{
+  margin-left: 55.4rem;
+  margin-top: 1rem;
+  position: absolute;
+  width: 84px;
+  height: 44px;
+  border-radius: 7px;
+  border: 1px solid #B2B2B2;
+  background: #FAF8F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding-left: .5rem;
+}
+
+.grafico_valor h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.grafico_valor p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
 
 /* ---------- RODAPRE ---------- */
 

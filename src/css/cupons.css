@@ -251,8 +251,19 @@ font-size: 12px;
 font-weight: 500;
 }
 
+.cupons_div {
+  display: flex;
+  align-items: center;
+}
+
+.icon_cupom {
+  font-size: 1.3rem;
+  padding-left: .5rem;
+  color: #FFC107;
+}
+
 .lista-cupons {
-  padding: 2rem 0;
+  padding-top: 2rem;
   display: flex;
   gap: 2rem;
 }
@@ -308,4 +319,28 @@ font-weight: 500;
 .resgate button:hover {
   transform: translate(0px, 1px);
   background: rgb(160, 3, 3);
+}
+
+/* ---------- RODAPRE ---------- */
+
+footer {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  color: var(--color-grafite);
+  box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+}
+
+.rodape img {
+  height: 54px;
+}
+
+.sobre a {
+  color: var(--color-grafite);
 }
