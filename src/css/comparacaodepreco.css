@@ -1383,3 +1383,6 @@ div.input .input:valid ~ label {
   font-size: 15px;
   font-weight: 400;
 }
+.texto_grosso {
+  font-weight:500; 
+}
