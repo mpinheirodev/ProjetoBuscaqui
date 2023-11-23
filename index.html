@@ -347,7 +347,9 @@
       <div class="modal-body">
         <div class="container">
           <div class="boxtext">
-            <img src="./src/assets/BUSCAQUI_LOGO.png" alt="logo" width="150px" />
+            <div class="logobuscaquilogin">
+              <img src="./src/assets/BUSCAQUI_LOGO.png" alt="logo" width="150px" />
+            </div>
             <form>
               <div class="input">
                 <input
@@ -370,24 +372,21 @@
                 <label for="senha">Senha</label>
               </div>
               <div class="box">
-                <input type="checkbox" id="lembrar" name="Lembrar" />
-                <label for="lembrar">Lembre-se de mim!</label>
-                <a href="https://www.google.com" target="_blank">Esqueceu a senha?</a>
+                <div class="lembredemim">
+                  <input type="checkbox" id="lembrar" name="Lembrar" />
+                  <label for="lembrar">Lembre de mim</label>
+                </div>
+                <div class="esquecisenha">
+                  <a href="index.html">Esqueceu a senha?</a>
+                </div>
               </div>
-
-              <div class="conta">
-                <p>Não tem uma conta?</p>
-                <a href="./cadastro.html">Cadastre-se</a>
-              </div>
-
-              <br />
               <input
                 type="submit"
                 class="button"
-                value="Continue com o Email"
+                value="Continue com e-mail"
               />
             </form>
-            <p>Ou</p>
+            <p class="texto_ou">Ou</p>
             <div class="icones">
               <a href="https://www.google.com" target="_blank">
                 <img src="./src/assets/google.png" alt="Google" />
@@ -405,6 +404,7 @@
           <div class="boximg" id="close-modal"></div>
         </div>
       </div>
+    </div>
     </div> 
     <script src="./src/js/main.js"></script>
   </body>
