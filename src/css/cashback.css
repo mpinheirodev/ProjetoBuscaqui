@@ -261,7 +261,7 @@
   .card {
     width: calc(100% - 20px); /* 25% para mostrar até 4 cards por linha, subtraindo o espaçamento entre eles */
     margin-bottom: 20px; /* Espaçamento entre as linhas de cards */
-    background-color: #f5f5f5; /* Cor de fundo para ilustração */
+    background-color: #ffffff; /* Cor de fundo para ilustração */
     border: 1px solid #ddd; /* Borda para ilustração */
     border-radius: 8px; /* Borda arredondada para ilustração */
     overflow: hidden; /* Evita que imagens maiores que o card ultrapassem os limites */
