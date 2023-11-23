@@ -23,8 +23,11 @@
 
 body {
     background-color: var(--color-bg);
-}
-
+  }
+  
+  a {
+    color: var(--color-grafite);
+  }
 /* Navbar */
 
 .navbar {
@@ -32,78 +35,204 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 6rem;
-    margin-bottom: 1rem;
-}
-
-.categorias {
+    padding: 1rem 4rem;
+  }
+  
+  .logo_nav {
+    width: 150px;
+  }
+  
+  .logo_nav img {
+    width: 150px;
+  }
+  
+  .window-scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--color-bg-white);
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-categoria {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    margin-left: -4rem;
+  }
+  
+  .categorias {
     display: flex;
     align-items: center;
-}
-
-.categorias i {
-    padding: 0 .4rem;
-}
-
-.links {
+    cursor: pointer;
+  }
+  
+  .categorias i {
+    padding-left: .4rem;
+  }
+  
+  .lista-categorias {
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    top: 2rem;
+    background-color: var(--color-bg-white);
+    z-index: 1;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .lista-categorias a {
+    display: block;
+    padding: .6rem 1rem;
+  }
+  
+  .lista-categorias a:hover{
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+  
+  .lista-categorias a:first-child:hover{
+    border-radius: .5rem .5rem 0 0;
+  }
+  
+  .lista-categorias a:last-child:hover{
+    border-radius: 0 0 .5rem .5rem;
+  }
+  
+  .links {
     display: flex;
     align-items: center;
-}
-
-.cupons, .cashback, .forum {
+    gap: .8rem;
+  }
+  
+  .cupons a,
+  .cashback a,
+  .forum a {
     display: flex;
     align-items: center;
-    padding: .9rem;
-}
-
-.cupons i  {
+    padding: .5rem;
+  }
+  
+  .cupons i {
     margin-right: .4rem;
-    color: yellow;
+    color: var(--color-yellow);
     font-size: 1.4rem;
-}
-
-.cashback i {
+  }
+  
+  .cashback i {
     margin-right: .4rem;
-    color: green;
+    color: var(--color-green);
     font-size: 1.4rem;
-}
-
-.forum i {
+  }
+  
+  .forum i {
     margin-right: .4rem;
-    color: red;
+    color: var(--color-red);
     font-size: 1.4rem;
-}
-
-.usuario {
+  }
+  
+  .usuario {
     display: flex;
     align-items: center;
-    padding: 0 .5rem;
-}
-
-.usuario i {
-    padding: 0 .8rem;
+    padding: 0 .2rem;
+    position: relative;
+  }
+  
+  #notificacao {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .notificacao {
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    top: 4rem;
+    right: 7rem;
+    background-color: var(--color-bg-white);
+    z-index: 1;
+    border-radius: .6rem;
+    box-shadow: .4rem .2rem .8rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+  }
+  
+  .dropdown-notificacao {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+  }
+  
+  .lista-notificacao {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  .lista-notificacao a {
+    display: flex;
+    align-items: center;
+    padding: .6rem;
+    border: .02rem solid var(--color-gray);
+    border-radius: .4rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .lista-notificacao a:hover {
+    border: .02rem solid var(--color-red);
+    background-color: var(--color-bg);
+  }
+  
+  .lista-notificacao i {
+    color: var(--color-red);
+    margin-right: .4rem;
+  }
+  
+  .mostrar {
+    display: block;
+  }
+  
+  .usuario{
+    user-select: none;
+    padding-right: .8rem;
+  }
+  
+  .dot {
+    color: var(--color-red);
+    position: relative;
+    top: -.5rem;
+    left: -.8rem;
+  }
+  
+  .usuario i {
+    padding: 0 .2rem;
     font-size: 1.6rem;
-}
-
-.busca {
+  }
+  
+  .busca {
     display: flex;
     align-items: center;
-}
-
-.busca i {
-    color: #A7A5A5;
+  }
+  
+  .busca i {
+    color: var(--color-gray);
     margin-left: -1.6rem;
-}
-
-.busca input {
+  }
+  
+  .busca input {
     padding: .6rem;
     border-radius: .8rem;
-    border: .1rem solid #A7A5A5;
-    width: 20rem;
+    border: .05rem solid var(--color-gray);
+    width: 18rem;
+  }
+  
+  /* Histórico Navegação */
+
+.container {
+    width: 100%;
+    padding: 0 4.2rem;
 }
-
-
-/* Histórico Navegação */
 
 .historico_navegacao {
     display: flex;
@@ -113,13 +242,17 @@ body {
     line-height: normal;
     font-style: normal;
     justify-content: left;
-    padding-left: 98px;
 }
 
 .historico_navegacao a{
     text-decoration: none;
     color: var(--color-grafite);
 }
+
+.historico_navegacao h6 {
+    font-size: 13px;
+    font-weight: 300;
+  }
 
 .seta_navegacao {
     margin-top: 2px;
@@ -137,8 +270,6 @@ body {
 /* Estilização Elementos Esquerda */
 
 .elementos_esquerda {
-    margin-top: 30px;
-    margin-left: 98px;
     display: flex;
     flex-direction: column;
 }
@@ -356,6 +487,7 @@ input[type="range"]::-webkit-slider-thumb{
 
 .classe_geral {
     display: flex;
+    padding-top: 30px;
 }
 
 /* Card dos produtos */
@@ -363,9 +495,7 @@ input[type="range"]::-webkit-slider-thumb{
 .produtos-coluna {
     width: 100%;
     display: flex;
-     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-right: 98px;
+    flex-wrap: wrap;
     position: relative;
     display: flex;
     align-items: center;
@@ -461,3 +591,27 @@ input[type="range"]::-webkit-slider-thumb{
     font-weight: 400;
     margin-top: 10px;
 }
+
+/* ---------- RODAPRE ---------- */
+
+footer {
+    width: 100%;
+    background-color: var(--color-bg-white);
+    color: var(--color-grafite);
+    box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+  }
+  
+  .rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  
+  .rodape img {
+    height: 54px;
+  }
+  
+  .sobre a {
+    color: var(--color-grafite);
+  }

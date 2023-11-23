@@ -22,7 +22,7 @@
     <title>Buscaqui 🔥</title>
   </head>
   <body>
-    <!-- BARRA DE NAVEGAÇÃO -->
+    <!-- Barra de navegação -->
     <nav class="navbar">
       <!-- Logo -->
       <div class="logo_nav">
@@ -35,9 +35,23 @@
       </div>
 
       <!-- Categorias -->
-      <div class="categorias">
-        <h3>Categorias</h3>
-        <i class="fa-solid fa-chevron-down"></i>
+      <div class="dropdown-categoria">
+        <div class="categorias" onclick="myFunction()">
+          <h3>Categorias</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="dropdown" class="lista-categorias">
+          <a href="./buscaproduto.html">Celulares e telefones</a>
+          <a href="#">Eletrônicos</a>
+          <a href="#">Eletrodoméstico</a>
+          <a href="#">Informática e escritório</a>
+          <a href="#">Games, jogos e brinquedos</a>
+          <a href="#">Auto peças e acessórios</a>
+          <a href="#">Casa e jardim</a>
+          <a href="#">Esporte e lazer</a>
+          <a href="#">Utliadade doméstica</a>
+          <a href="#">Todas as categorias</a>
+        </div>
       </div>
 
       <!-- Área de busca -->
@@ -49,33 +63,47 @@
       <!-- Grupo de links -->
       <div class="links">
         <div class="cupons">
-          <i class="fa-solid fa-percent"></i>
-          <h4>Cupons</h4>
+          <a href="./cupons.html">
+            <i class="fa-solid fa-percent"></i>
+            <h4>Cupons</h4>
+          </a>
         </div>
         <div class="cashback">
-          <i class="fa-solid fa-hand-holding-dollar"></i>
-          <h4>Cashback</h4>
+          <a href="./cashback.html">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h4>Cashback</h4>
+          </a>
         </div>
-        <div class="forum">
-          <i class="fa-regular fa-comments"></i>
-          <h4>Fórum</h4>
+      </div>
+
+      <!-- Notificação -->
+      <div class="notificacao">
+        <div class="dropdown-notificacao">
+          <h3>Notificações</h3>
+          <div class="lista-notificacao">
+            <a href="./cupons.html"><i>&#x25CF;</i><p><b>5</b> novos cupons</p></a>
+            <a href="#"><i>&#x25CF;</i><p><b>3</b> novos cashbacks</p></a>
+            <a href="#"><i>&#x25CF;</i><p><b>20</b> novos comentários</p></a>
+          </div>
         </div>
       </div>
 
       <!-- Grupo de usuário -->
       <div class="usuario">
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-regular fa-circle-user"></i>
+        <i id="notificacao" class="fa-regular fa-bell">
+          <p class="dot">&#x25CF;</p>
+        </i>
+        <i class="fa-regular fa-circle-user" id="open-modal"></i>
       </div>
     </nav>
 
     <!-- Histórico Navegação -->
+    <section class="container">
     <div class="historico_navegacao">
-      <a href="./index.html"><h5>Home</h5></a>
+      <a href="./index.html"><h5>Início</h5></a>
       <i class="fa-solid fa-chevron-right seta_navegacao"></i>
-      <h6 class="diretorio_atual">Eletrodoméstico</h6>
+      <a href="./buscaproduto.html"><h6>Celulares e telefones</h6></a>
     </div>
-
     <div class="classe_geral">
       <div class="elementos_esquerda">
         <!-- Div Preço -->
@@ -123,23 +151,35 @@
               <div class="ajuste_marcas">
                 <input
                   type="checkbox"
-                  id="Brastemp"
-                  name="Brastemp"
-                  value="Brastemp"
+                  id="Apple"
+                  name="Apple"
+                  value="Apple"
                 />
-                <label for="Brastemp">Brastemp</label>
+                <label for="Apple">Apple</label>
               </div>
-              <div class="quantidade">22</div>
+              <div class="quantidade">12</div>
             </div>
             <div class="marcas">
               <div class="ajuste_marcas">
                 <input
                   type="checkbox"
-                  id="Britânia"
-                  name="Britânia"
-                  value="Britânia"
+                  id="Samsung"
+                  name="Samsung"
+                  value="Samsung"
                 />
-                <label for="Britânia">Britânia</label>
+                <label for="Samsung">Samsung</label>
+              </div>
+              <div class="quantidade">24</div>
+            </div>
+            <div class="marcas">
+              <div class="ajuste_marcas">
+                <input
+                  type="checkbox"
+                  id="Motorola"
+                  name="Motorola"
+                  value="Motorola"
+                />
+                <label for="Motorola">Motorola</label>
               </div>
               <div class="quantidade">07</div>
             </div>
@@ -147,25 +187,13 @@
               <div class="ajuste_marcas">
                 <input
                   type="checkbox"
-                  id="Consul"
-                  name="Consul"
-                  value="Consul"
+                  id="Xiaomi"
+                  name="Xiaomi"
+                  value="Xiaomi"
                 />
-                <label for="Consul">Consul</label>
+                <label for="Xiaomi">Xiaomi</label>
               </div>
-              <div class="quantidade">02</div>
-            </div>
-            <div class="marcas">
-              <div class="ajuste_marcas">
-                <input
-                  type="checkbox"
-                  id="Continental"
-                  name="Continental"
-                  value="Continental"
-                />
-                <label for="Continental">Continental</label>
-              </div>
-              <div class="quantidade">0</div>
+              <div class="quantidade">15</div>
             </div>
             <a href="#"
               ><div class="mostrar_ops">Mostrar todas as opções</div></a
@@ -188,39 +216,39 @@
               <div class="ajuste_marcas">
                 <input
                   type="checkbox"
-                  id="acoescovado"
-                  name="acoescovado"
-                  value="acoescovado"
+                  id="Branco"
+                  name="Branco"
+                  value="Branco"
                 />
-                <label for="acoescovado">Aço Escovado</label>
+                <label for="Branco">Branco</label>
               </div>
-              <div class="quantidade">22</div>
+              <div class="quantidade">18</div>
             </div>
             <div class="marcas">
               <div class="ajuste_marcas">
                 <input
                   type="checkbox"
-                  id="branca"
-                  name="branca"
-                  value="branca"
+                  id="Preto"
+                  name="Preto"
+                  value="Preto"
                 />
-                <label for="branca">Branca</label>
+                <label for="Preto">Preto</label>
+              </div>
+              <div class="quantidade">32</div>
+            </div>
+            <div class="marcas">
+              <div class="ajuste_marcas">
+                <input type="checkbox" id="Azul" name="Azul" value="Azul" />
+                <label for="Azul">Azul</label>
               </div>
               <div class="quantidade">07</div>
             </div>
             <div class="marcas">
               <div class="ajuste_marcas">
-                <input type="checkbox" id="cinza" name="cinza" value="cinza" />
-                <label for="cinza">Cinza</label>
+                <input type="checkbox" id="Vermelho" name="Vermelho" value="Vermelho" />
+                <label for="Vermelho">Vermelho</label>
               </div>
-              <div class="quantidade">02</div>
-            </div>
-            <div class="marcas">
-              <div class="ajuste_marcas">
-                <input type="checkbox" id="prata" name="prata" value="prata" />
-                <label for="prata">Prata</label>
-              </div>
-              <div class="quantidade">0</div>
+              <div class="quantidade">05</div>
             </div>
             <a href="#"
               ><div class="mostrar_ops">Mostrar todas as opções</div></a
@@ -328,5 +356,23 @@
         </div>
       </div>
     </div>
+  </section>
+
+<!-- Rodapé -->
+<footer class="rodape">
+  <a href="index.html"><img src="./src/assets/BUSCAQUI_LOGO.png" alt="" /></a>
+  <div class="sobre">
+    <h3>Sobre</h3>
+    <a href="./sobre.html">Quem somos</a>
+  </div>
+  <div class="trabalho">
+    <h3>Disciplina</h3>
+    <p>
+      Trabalho desenvolvido para as <br />
+      disciplinas de UI/UX Design <br />
+      e Web Coding
+    </p>
+  </div>
+</footer>  
   </body>
 </html>

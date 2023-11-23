@@ -6,65 +6,98 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="./src/css/comparacaodepreco.css">
   <link rel="shortcut icon" href="./src/assets/ant-design_fire-filled.png" type="image/x-icon" />
-  <script src="https://kit.fontawesome.com/47576b6131.js" crossorigin="anonymous"></script>
+  <script
+      src="https://kit.fontawesome.com/47576b6131.js"
+      crossorigin="anonymous"
+    ></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-u1q23m50eMqUCGc9saMNE8uvmznAdOtkP5IeRvbWg8gIlxU5w0p0ma8I3oJmTuLQ" crossorigin="anonymous">
-  <script src="./src/js/ScriptComparacao.js"></script>
-
   <title>Buscaqui 🔥</title>
 </head>
 <body>
-  <!-- BARRA DE NAVEGAÇÃO -->
-  <nav class="navbar">
-    <!-- logo -->
-    <div class="logo_nav">
-      <img src="./src/assets/BUSCAQUI_LOGO.png" alt="Logo" class="img_logo" />
-    </div>
-
-    <!-- categorias -->
-    <div class="categorias">
-      <h3>Categorias</h3>
-      <i class="fa-solid fa-chevron-down"></i>
-    </div>
-
-    <!-- Área de busca -->
-    <div class="busca">
-      <input type="text" placeholder="Busque por produtos" />
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-
-    <!-- grupo de links -->
-    <div class="links">
-      <div class="cupons">
-        <i class="fa-solid fa-percent"></i>
-        <h4>Cupons</h4>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo_nav">
+        <a href="./index.html"
+          ><img
+            src="./src/assets/BUSCAQUI_LOGO.png"
+            alt="Logo"
+            class="img_logo"
+        /></a>
       </div>
-      <div class="cashback">
-        <i class="fa-solid fa-hand-holding-dollar"></i>
-        <h4>Cashback</h4>
-      </div>
-      <div class="forum">
-        <i class="fa-regular fa-comments"></i>
-        <h4>Fórum</h4>
-      </div>
-    </div>
 
-    <!-- grupo de usuário -->
-    <div class="usuario">
-      <i class="fa-regular fa-bell"></i>
-      <i class="fa-regular fa-circle-user"></i>
-    </div>
-  </nav>
+      <!-- Categorias -->
+      <div class="dropdown-categoria">
+        <div class="categorias" onclick="myFunction()">
+          <h3>Categorias</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div id="dropdown" class="lista-categorias">
+          <a href="./buscaproduto.html">Celulares e telefones</a>
+          <a href="#">Eletrônicos</a>
+          <a href="#">Eletrodoméstico</a>
+          <a href="#">Informática e escritório</a>
+          <a href="#">Games, jogos e brinquedos</a>
+          <a href="#">Auto peças e acessórios</a>
+          <a href="#">Casa e jardim</a>
+          <a href="#">Esporte e lazer</a>
+          <a href="#">Utliadade doméstica</a>
+          <a href="#">Todas as categorias</a>
+        </div>
+      </div>
 
+      <!-- Área de busca -->
+      <div class="busca">
+        <input type="text" placeholder="Busque por produtos" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- Grupo de links -->
+      <div class="links">
+        <div class="cupons">
+          <a href="./cupons.html">
+            <i class="fa-solid fa-percent"></i>
+            <h4>Cupons</h4>
+          </a>
+        </div>
+        <div class="cashback">
+          <a href="./cashback.html">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h4>Cashback</h4>
+          </a>
+        </div>
+      </div>
+
+      <!-- Notificação -->
+      <div class="notificacao">
+        <div class="dropdown-notificacao">
+          <h3>Notificações</h3>
+          <div class="lista-notificacao">
+            <a href="./cupons.html"><i>&#x25CF;</i><p><b>5</b> novos cupons</p></a>
+            <a href="#"><i>&#x25CF;</i><p><b>3</b> novos cashbacks</p></a>
+            <a href="#"><i>&#x25CF;</i><p><b>20</b> novos comentários</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grupo de usuário -->
+      <div class="usuario">
+        <i id="notificacao" class="fa-regular fa-bell">
+          <p class="dot">&#x25CF;</p>
+        </i>
+        <i class="fa-regular fa-circle-user" id="open-modal"></i>
+      </div>
+    </nav>
   <!-- Histórico Navegação -->
   <div class="historico_navegacao">
-    <a href="index.html"><h5>Home</h5></a>
+    <a href="./index.html"><h5>Início</h5></a>
     <i class="fa-solid fa-chevron-right seta_navegacao"></i>
-    <a href="buscaproduto.html"><h5>Eletrodoméstico</h5></a>
+    <a href="buscaproduto.html"><h5>Celulares e telefones</h5></a>
     <i class="fa-solid fa-chevron-right seta_navegacao"></i>
-    <h5 class="diretorio_atual">Geladeira</h5>
+    <a href="comparacaodepreco.html"><h6>Iphone</h6></a>
   </div>
   <br>
 
@@ -77,7 +110,7 @@
     <div class="stars">
       <div class="filled-stars" style="width: 80%;">★★★★★</div>
     </div>
-    <span class="rating-info">(4.0/5) - 5 avaliações  </span>
+    <span class="rating-info">(5/5) - 3 avaliações  </span>
   </div>
   <br>
 
@@ -86,53 +119,57 @@
     <div class="main-image-container">
       <div class="informacao_1">
         <!-- Imagem Principal do produto quando é clicada -->
-        <img class="imagem_principal" src="./src/assets/iphone13v-1.png" alt="Imagem Principal">
+        <div class="container_img">
+          <img class="imagem_principal" src="./src/assets/iphone13v-1.png" alt="Imagem Principal">
+        </div>
         <!-- Pequenas imagens abaixo da imagem principal para ser clicáveis -->
         <div class="thumbnails">
           <img class="thumbnail" src="./src/assets/iphone13v-1.png" alt="Miniatura 1">
-          <img class="thumbnail" src="./src/assets/iphone13v-2.jpg" alt="Miniatura 2">
-          <img class="thumbnail" src="./src/assets/iphone13v-3.jpg" alt="Miniatura 3">
-          <img class="thumbnail" src="./src/assets/iphone13v-4.jpg" alt="Miniatura 4">
+          <img class="thumbnail" src="./src/assets/iphone13v-2.png" alt="Miniatura 2">
+          <img class="thumbnail" src="./src/assets/iphone13v-3.png" alt="Miniatura 3">
+          <img class="thumbnail" src="./src/assets/iphone13v-4.png" alt="Miniatura 4">
         </div>
       </div>
-      <div class="informacao_2">
-        <!-- Loja verificada -->
-        <div class="loja_verificada">Loja Verificada</div>
-        <!-- Preço do produto -->
-        <div class="menor_preco">menor preço por Mercado Livre</div>
-        <div class="preco"><h1>R$ 3630</h1><div class="preco_menor"><h5>,00</h5></div></div>
-        
-        <div class="parcela">ou 10x de R$ 363,00 sem juros</div>
-        <!-- Botão de promoção -->
-        <button class="promocao_botao">
-        Pegar Promoção <i class="fas fa-arrow-up-right-from-square"></i>
-        </button>
-        <!-- Botão de Salvar Oferta -->
-        <button class="salvar-btn">
-        <span class="coracao">&#9825;</span>Salvar Oferta
-        </button>
-      </div>
-      <div class="informacao_3">
-        <div class="aquitempreco">
-          <div class="texto_tempreco"><img class="fogo_icon" src="./src/assets/fogo.svg" /><div class="texto_aqui">aqui</div>tem preço</div>
-          <div class="historico_preco"><img src="./src/assets/historic_price.svg" /></div>
-          <p>Com base nos últimos 30 dias, o valor está próximo da média de <b>R$ 4.049,00</b></p>
-          <div class="div_historico">
-            <button>Ver Histórico</button>
-          </div>
+      <div class="arrumar_preco">
+        <div class="informacao_2">
+          <!-- Loja verificada -->
+          <div class="loja_verificada">Loja Verificada</div>
+          <!-- Preço do produto -->
+          <div class="menor_preco">menor preço por Mercado Livre</div>
+          <div class="preco"><h1>R$ 3630</h1><div class="preco_menor"><h5>,00</h5></div></div>
+          
+          <div class="parcela">ou 10x de R$ 363,00 sem juros</div>
+          <!-- Botão de promoção -->
+          <button class="promocao_botao">
+          Pegar Promoção <i class="fas fa-arrow-up-right-from-square"></i>
+          </button>
+          <!-- Botão de Salvar Oferta -->
+          <button class="salvar-btn">
+          <span class="coracao">&#9825;</span>Salvar Oferta
+          </button>
         </div>
-        <div class="quereconomizar">
-          <div class="economizar_cima">
-            <div class="economizar_1">
-              <i class="fa-solid fa-bell sino"></i>Quer economizar?
-            </div>
-            <div class="economizar_2">
-              <input type="checkbox">
+        <div class="informacao_3">
+          <div class="aquitempreco">
+            <div class="texto_tempreco"><img class="fogo_icon" src="./src/assets/fogo.svg" /><div class="texto_aqui">aqui</div>tem preço</div>
+            <div class="historico_preco"><img src="./src/assets/historic_price.svg" /></div>
+            <p>Com base nos últimos 30 dias, o valor está próximo da média de <b>R$ 4.049,00</b></p>
+            <div class="div_historico">
+              <button>Ver Histórico</button>
             </div>
           </div>
-          <div class="descricao_economizar">
-            <p>Te avisamos quando o preço melhorar!</p>
-          </div>
+          <div class="quereconomizar">
+            <div class="economizar_cima">
+              <div class="economizar_1">
+                <i class="fa-solid fa-bell sino"></i>Quer economizar?
+              </div>
+              <div class="economizar_2">
+                <input type="checkbox">
+              </div>
+            </div>
+            <div class="descricao_economizar">
+              <p>Te avisamos quando o preço melhorar!</p>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -147,13 +184,57 @@
 <!-- Conteúdos correspondentes para cada aba -->
 <div id="precos" class="tab-content active">
   <div class="compare">
-    <h3>Compare os preços</h3>
+    <h3 class="descri0">Compare os preços</h3>
     <div class="comparacao_preco">
       <h4>Menor Preço</h4>
     </div>
     <div class="produto_comparacao">
-      <!-- Produto 01 -->
-    <div class="long-card-produto">
+    <!-- Produto 01 -->
+      <div class="long-card-produto">
+        <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
+        <div class="info">
+          <div class="nome">
+            <h3>
+              Apple iPhone 13 128GB Verde 5G Tela 6,1"
+            </h3>
+          </div>
+          <div class="valores">
+            <h3>R$ 3.630,00</h3>
+            <p> à vista</p>
+          </div>
+          <p>ou 10x de R$363,00 sem juros</p>
+        </div>
+        <div class="logoloja">
+          <img src="./src/assets/mercadolivre.jpeg">
+        </div>
+      <button class="irloja">Ir para a loja</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Produto 02 -->
+<div class="long-card-produtoo">
+  <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
+    <div class="info">
+      <div class="nome">
+        <h3>
+        Apple iPhone 13 128GB Verde 5G Tela 6,1"
+        </h3>
+      </div>
+      <div class="valoress">
+        <h3>R$ 3.850,00</h3>
+        <p> à vista</p>
+      </div>
+      <p>ou 10x de R$385,00 sem juros</p>
+    </div>
+    <div class="logolojaa">
+      <img src="./src/assets/magalu.png">
+    </div>
+    <button class="irloja">Ir para a loja</button>
+  </div>
+
+<!-- Produto 03 -->
+    <div class="long-card-produtoo">
       <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
       <div class="info">
         <div class="nome">
@@ -161,115 +242,189 @@
             Apple iPhone 13 128GB Verde 5G Tela 6,1"
           </h3>
         </div>
-        <div class="valores">
-          <h3>R$ 3.630,00</h3>
+        <div class="valoress">
+          <h3>R$ 3.930,00</h3>
           <p> à vista</p>
         </div>
-        <p>ou 10x de R$363,00 sem juros</p>
+        <p>ou 10x de R$393,00 sem juros</p>
       </div>
-      <div class="logoloja">
-        <img src="./src/assets/mercadolivre.jpeg">
+      <div class="logolojaa">
+        <img src="./src/assets/americanas.png">
       </div>
-      
       <button class="irloja">Ir para a loja</button>
     </div>
+  </div>
+<!-- HISTÓRICO -->
+<div id="historico" class="tab-content active descri">
+  <h3>Histórico de Preços</h3>
+  <div class="geral_flex2">
+    <h6>4800</h6>
+    <div class="linha-horizontal"></div>
+  </div>
+  <div class="geral_flex2">
+    <h6>4425</h6>
+    <div class="linha-horizontal"></div>
+  </div>
+  <div class="geral_flex4">
+    <img class="grafico_preco" src="./src/assets/graphic_price.png">
+    <img class="grafico_icon" src="./src/assets/fogob.svg" />
+  </div>
+  <div class="geral_flex2">
+    <h6>4050</h6>
+    <div class="linha-horizontal"></div>
+  </div>
+  <div class="geral_flex2">
+    <h6>3675</h6>
+    <div class="linha-horizontal"></div>
+  </div>
+  <div class="geral_flex2">
+    <h6>3300</h6>
+    <div class="linha-horizontal"></div>
+  </div>
+  <div class="geral_flex3">
+    <h6>18 ago</h6>
+    <h6>24 ago</h6>
+    <h6>29 ago</h6>
+    <h6>04 ago</h6>
+    <h6>09 set</h6>
+    <h6>15 set</h6>
+    <h6>20 set</h6>
+    <h6>Hoje</h6>
+  </div>
+
+
+
+
+
+
+<!-- DESCRIÇÃO -->
+<div id="descricao" class="tab-content active descri">
+  <h3>Descrição do Produto</h3>
+  <div class="geral_flex">
+  <div class="informacoes_principais">
+    <h4>Informações Principais</h4>
+      <div class="container_tabela">
+        <div class="linha_tabela">
+            <div class="dado_tabela">Marca</div>
+            <div class="dado_tabela">Apple</div>
+        </div>
+        <div class="linha_tabela">
+            <div class="dado_tabela">Linha</div>
+            <div class="dado_tabela">iPhone</div>
+        </div>
+        <div class="linha_tabela">
+            <div class="dado_tabela">Série</div>
+            <div class="dado_tabela">13</div>
+        </div>
+        <div class="linha_tabela">
+            <div class="dado_tabela">Tipo de Aparelho</div>
+            <div class="dado_tabela">Smartphone</div>
+        </div>
+        <div class="linha_tabela">
+            <div class="dado_tabela">Quantidade de Chip</div>
+            <div class="dado_tabela">1 Chip</div>
+        </div>
+      </div>
+    </div>
+      <div class="descricao">
+        <h4>Descrição</h4>
+        <p>Contando com o sistema operacional iOS, Apple traz seu modelo, o Smartphone Apple iPhone 13 128GB Câmera Dupla. A tela de tecnologia Super Retina XDR conta com 6.1" em resolução 2K. O aparelho apresenta 14.6cm de altura e 7.15cm de largura, com peso de 173.0g. O smartphone possui uma câmera frontal de 12.0 MP e um conjunto de câmeras na parte de trás, cada uma com 12.0 + 12.0 MP. Com resolução 4K em vídeos, a câmera deste iPhone também possui os recursos de Autofoco, Câmera Dupla, Flash, Flash Frontal, HDR, Modo Noturno, Modo Retrato, Slow Motion. Este iPhone possui uma bateria com capacidade de 3240mAh. Equipado com o processador Apple A15 Bionic, ele tem uma capacidade de 3.2GHz de processamento. A memória RAM do celular é de 4.0GB.</p>
+      </div>
     </div>
   </div>
 </div>
-  <!-- Produto 01 -->
 
-  <!-- Produto 02 -->
-<div class="long-card-produtoo">
-  <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
-  <div class="info">
-    <div class="nome">
-      <h3>
-        Apple iPhone 13 128GB Verde 5G Tela 6,1"
-      </h3>
+<!-- AVALIAÇÃO -->
+<div id="avaliacoes" class="tab-content active descri2">
+  <h3>Avaliações do Produto</h3>
+  <!-- COMENTARIO 01 -->
+  <div class="comentario">
+    <div class="rating1">
+      <div class="stars1">
+        <div style="width: 80%;">★★★★★</div>
+      </div>
+      <div class="recomendado_data">
+        <div class="recomendado">
+          <h6>Recomendado</h6>
+        </div>
+        <div class="info_comentario">
+          <h5>22 nov. 2023</h5>
+        </div>
+      </div>
     </div>
-    <div class="valoress">
-      <h3>R$ 3.850,00</h3>
-      <p> à vista</p>
+    <p>Muito bom o celular, chegou em 4 dias da data prevista, é um celular leve é um tamanho ideias, não pequeno e grande. Veio tudo certinho.</p>
+    <div class="user_comentario">
+      <h4>Ryanzinho do Amor •</h4>
+      <h5>Via Americanas</h5>
     </div>
-    <p>ou 10x de R$385,00 sem juros</p>
   </div>
-  <div class="logolojaa">
-    <img src="./src/assets/magalu.png">
+
+  <!-- COMENTARIO 02 -->
+  <div class="comentario">
+    <div class="rating1">
+      <div class="stars1">
+        <div style="width: 80%;">★★★★★</div>
+      </div>
+      <div class="recomendado_data">
+        <div class="recomendado">
+          <h6>Recomendado</h6>
+        </div>
+        <div class="info_comentario">
+          <h5>23 nov. 2023</h5>
+        </div>
+      </div>
+    </div>
+    <p>Celular completíssimo, câmera excelente, diversas funções. A duração da bateria deixa um pouco a desejar, mas dura o dia todo tranquilo, mas tudo bem. Escolhi na cor Verde e é lindíssimo.</p>
+    <div class="user_comentario">
+      <h4>Michael Jackson •</h4>
+      <h5>Via Mercado Livre</h5>
+    </div>
+  </div>
+
+  <!-- COMENTARIO 03 -->
+  <div class="comentario">
+    <div class="rating1">
+      <div class="stars1">
+        <div style="width: 80%;">★★★★★</div>
+      </div>
+      <div class="recomendado_data">
+        <div class="recomendado">
+          <h6>Recomendado</h6>
+        </div>
+        <div class="info_comentario">
+          <h5>18 nov. 2023</h5>
+        </div>
+      </div>
+    </div>
+    <p>Funciona perfeitamente, roda qualquer jogo sem travamentos, fotos perfeitas e vídeos com imagens 4k. Produto com design limpo, simples e fácil de usar.</p>
+    <div class="user_comentario">
+      <h4>Neymar Júnior •</h4>
+      <h5>Via Magalu</h5>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   
-  <button class="irloja">Ir para a loja</button>
-</div>
-</div>
-</div>
-</div>
-  <!-- Produto 02 -->
-
-  <!-- Produto 03 -->
-  <div class="long-card-produtooo">
-    <img src="./src/assets/iphone13v-1.png" alt="imagem produto" />
-    <div class="info">
-      <div class="nome">
-        <h3>
-          Apple iPhone 13 128GB Verde 5G Tela 6,1"
-        </h3>
-      </div>
-      <div class="valoresss">
-        <h3>R$ 3.990,00</h3>
-        <p> à vista</p>
-      </div>
-      <p>ou 10x de R$399,00 sem juros</p>
-    </div>
-    <div class="logolojaaa">
-      <img src="./src/assets/americanas.png">
-    </div>
-    
-    <button class="irloja">Ir para a loja</button>
+<!-- Rodapé -->
+<footer class="rodape">
+  <a href="index.html"><img src="./src/assets/BUSCAQUI_LOGO.png" alt="" /></a>
+  <div class="sobre">
+    <h3>Sobre</h3>
+    <a href="./sobre.html">Quem somos</a>
   </div>
+  <div class="trabalho">
+    <h3>Disciplina</h3>
+    <p>
+      Trabalho desenvolvido para as <br />
+      disciplinas de UI/UX Design <br />
+      e Web Coding
+    </p>
   </div>
-  </div>
-  </div>
-  <!-- Produto 03 -->
-
-
-<div id="historico" class="tab-content">
-</div>
-
-<div id="descricao" class="tab-content active">
-  <br>
-  <div class="ficha_tecnica">Ficha técnica</div>
-  <br>
-  <div class="informacoes_principais">Informações principais</div>
-  <div class="container_tabela">
-    <div class="linha_tabela">
-        <div class="dado_tabela">Marca</div>
-        <div class="dado_tabela">Apple</div>
-    </div>
-    <div class="linha_tabela">
-        <div class="dado_tabela">Linha</div>
-        <div class="dado_tabela">iPhone</div>
-    </div>
-    <div class="linha_tabela">
-        <div class="dado_tabela">Série</div>
-        <div class="dado_tabela">13</div>
-    </div>
-    <div class="linha_tabela">
-        <div class="dado_tabela">Tipo de Aparelho</div>
-        <div class="dado_tabela">Smartphone</div>
-    </div>
-    <div class="linha_tabela">
-        <div class="dado_tabela">Quantidade de Chip</div>
-        <div class="dado_tabela">1 Chip</div>
-    </div>
-  </div>
-  <br>
-  <h3>Descrição</h3>
-  <p>Contando com o sistema operacional iOS, Apple traz seu modelo, o Smartphone Apple iPhone 13 128GB Câmera Dupla. A tela de tecnologia Super Retina XDR conta com 6.1" em resolução 2K. O aparelho apresenta 14.6cm de altura e 7.15cm de largura, com peso de 173.0g. O smartphone possui uma câmera frontal de 12.0 MP e um conjunto de câmeras na parte de trás, cada uma com 12.0 + 12.0 MP. Com resolução 4K em vídeos, a câmera deste iPhone também possui os recursos de Autofoco, Câmera Dupla, Flash, Flash Frontal, HDR, Modo Noturno, Modo Retrato, Slow Motion. Este iPhone possui uma bateria com capacidade de 3240mAh. Equipado com o processador Apple A15 Bionic, ele tem uma capacidade de 3.2GHz de processamento. A memória RAM do celular é de 4.0GB.</p>
-</div>
-
-
-<div id="avaliacoes" class="tab-content">
-</div>
-
-
+</footer>
+<script src="./src/js/ScriptComparacao.js"></script>  
 </body>
 </html>
