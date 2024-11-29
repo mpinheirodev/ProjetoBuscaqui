@@ -314,6 +314,7 @@ font-weight: 500;
   border: none;
   color: var(--color-white);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .resgate button:hover {
@@ -328,7 +329,7 @@ footer {
   background-color: var(--color-bg-white);
   color: var(--color-grafite);
   box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.25);
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .rodape {
@@ -594,9 +595,16 @@ div.input .input:valid ~ label {
   font-size: 15px;
   margin: 14px 44px;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: box-shadow 0.3s ease;
-  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translate(0px, 1px);
+  background: rgb(160, 3, 3);
 }
 
 .button:active {

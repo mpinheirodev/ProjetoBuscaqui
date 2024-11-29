@@ -148,19 +148,26 @@ div.input .input:focus ~ label,div.input .input:valid ~label{
     margin-left: 15px;
 }
 .button {
-    background-color: red;
-    border: 1px solid red;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
     color: white;
-    padding: 6px 40px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    margin: 6px 40px;
+    margin: 14px 44px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 10px;
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+  }
+  
+  .button:hover {
+    transform: translate(0px, 1px);
+    background: rgb(160, 3, 3);
   }
   .button:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.3);
